@@ -1,2 +1,2 @@
 # proceso-admision-escolar
-Proyecto para el proceso de admisión de una escuela.
+Proyecto realizado con Bonita BPM para el proceso de admisión de una escuela.
