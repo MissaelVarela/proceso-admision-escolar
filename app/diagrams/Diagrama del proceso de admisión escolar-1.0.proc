@@ -182,7 +182,7 @@
           <inputs xmi:type="process:ContractInput" xmi:id="_mi2KkE0SEe6B0fBcehHfGA" name="licenciatura">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_mi2KkU0SEe6B0fBcehHfGA"/>
           </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodo_de_ingero">
+          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodo_de_ingreso">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_qADRQU0SEe6B0fBcehHfGA"/>
           </inputs>
         </inputs>
