@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "b6e8e05d-b6ea-45db-bd97-34e21896b545",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694482506029,
+  "lastUpdate" : 1694500530194,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -798,19 +798,9 @@
       "exposed" : false
     },
     "licenciaturas_disponibles" : {
-      "type" : "json",
+      "type" : "url",
       "value" : [
-        "[",
-        "    {",
-        "        \"nombre\": \"Derecho\"",
-        "    },",
-        "    {",
-        "        \"nombre\": \"Ingeniería en software\"",
-        "    },",
-        "    {",
-        "        \"nombre\": \"Ingenieriía industrial\"",
-        "    }",
-        "]"
+        "../API/bdm/businessData/com.company.model.Licenciatura?q=find&p=0&c=99&f=activo=true"
       ],
       "exposed" : false
     },
@@ -825,6 +815,15 @@
       "type" : "url",
       "value" : [
         "../API/identity/user/{{loggedUser.user_id}}?d=professional_data"
+      ],
+      "exposed" : false
+    },
+    "licenciaturaSeleccionada" : {
+      "type" : "expression",
+      "value" : [
+        "var licenciaturaSeleccionada = $data.formInput.licenciatura;",
+        "",
+        "return licenciaturaSeleccionada;"
       ],
       "exposed" : false
     }
