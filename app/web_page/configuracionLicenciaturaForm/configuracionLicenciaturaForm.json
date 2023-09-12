@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "8d8871c6-7fd9-4b03-8bce-642ab4fda577",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694508425853,
+  "lastUpdate" : 1694508875338,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -435,9 +435,9 @@
                           {
                             "type" : "component",
                             "dimension" : {
-                              "md" : 11,
-                              "sm" : 12,
-                              "xs" : 12,
+                              "md" : 6,
+                              "sm" : 8,
+                              "xs" : 10,
                               "lg" : 6
                             },
                             "propertyValues" : {
@@ -510,8 +510,8 @@
                             "type" : "component",
                             "dimension" : {
                               "md" : 1,
-                              "sm" : 12,
-                              "xs" : 12,
+                              "sm" : 1,
+                              "xs" : 1,
                               "lg" : 6
                             },
                             "propertyValues" : {
