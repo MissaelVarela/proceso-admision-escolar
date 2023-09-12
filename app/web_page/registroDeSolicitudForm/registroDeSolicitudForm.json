@@ -2,9 +2,9 @@
   "id" : "registroDeSolicitudForm",
   "name" : "registroDeSolicitudForm",
   "type" : "form",
-  "uuid" : "b6e8e05d-b6ea-45db-bd97-34e21896b545",
+  "uuid" : "3713f576-9116-4038-8beb-98dfe3c4d403",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694510602731,
+  "lastUpdate" : 1694513461050,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -42,7 +42,7 @@
             "value" : "center"
           }
         },
-        "reference" : "28d9fe7f-072e-4b22-90f9-b0fa19f65340",
+        "reference" : "37137ad6-d584-4810-b85f-2ae038b090e4",
         "hasValidationError" : false,
         "id" : "pbTitle"
       }
@@ -63,7 +63,7 @@
             "value" : false
           }
         },
-        "reference" : "4c0361ec-ca60-4e30-9534-4fda498c2728",
+        "reference" : "ff008c1d-48aa-4243-b266-3e33607e0695",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -72,7 +72,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "7c7abe9f-9d43-4566-bb19-28da21d4591b",
+          "reference" : "8ebd1f37-bfe6-4a9a-809f-8b1b1b9a560d",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -115,7 +115,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "18ed6b5e-2f1f-4e2f-86a8-8fc6554e27ae",
+                "reference" : "ecbb7d1a-924a-44bc-b3ce-3c86fd43c2d4",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -143,7 +143,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "8ae95391-36ba-42d0-b20c-e67919d927e7",
+                "reference" : "8b65577a-dee2-43a6-ad3c-cbe8d158ab0c",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -171,7 +171,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "• Datos del aspirante"
+                          "value" : "Datos del aspirante"
                         },
                         "level" : {
                           "type" : "constant",
@@ -182,7 +182,7 @@
                           "value" : "left"
                         }
                       },
-                      "reference" : "407e34dc-f517-4204-834d-4e35c41cb2a6",
+                      "reference" : "1710d748-6b2c-496c-a50f-bf95f838f7b8",
                       "hasValidationError" : false,
                       "id" : "pbTitle"
                     }
@@ -192,7 +192,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 12,
+                        "sm" : 8,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -231,11 +231,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre:"
+                          "value" : "Nombre"
                         },
                         "labelPosition" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "top"
                         },
                         "labelWidth" : {
                           "type" : "constant",
@@ -267,7 +267,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "422b15d8-bfc3-427d-bc9a-63af3e8db551",
+                      "reference" : "ea12569d-9fa7-4f19-b5cf-cf05d9427526",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -277,7 +277,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 12,
+                        "sm" : 8,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -316,11 +316,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Apellido:"
+                          "value" : "Apellido"
                         },
                         "labelPosition" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "top"
                         },
                         "labelWidth" : {
                           "type" : "constant",
@@ -352,7 +352,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "67aef72d-b154-4641-9c1f-784cf822dfd9",
+                      "reference" : "b1010f2f-177d-45f4-8648-5ea53124d316",
                       "hasValidationError" : false,
                       "id" : "pbInput"
                     }
@@ -386,7 +386,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "45c733a0-acaa-494d-a5af-42397d9e9d3b",
+                "reference" : "ddc6d510-58e5-4aab-80d5-b98c35c2631b",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -414,7 +414,7 @@
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "• Datos de la solicitud"
+                          "value" : "Datos de la solicitud"
                         },
                         "level" : {
                           "type" : "constant",
@@ -425,7 +425,7 @@
                           "value" : "left"
                         }
                       },
-                      "reference" : "d958f69d-9e19-47ac-a655-f4076b03bfe6",
+                      "reference" : "24e4da3e-06b4-4a21-9c28-77376bd70a9c",
                       "hasValidationError" : false,
                       "id" : "pbTitle"
                     }
@@ -435,7 +435,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 12,
+                        "sm" : 8,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -466,11 +466,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Licenciatura:"
+                          "value" : "Licenciatura"
                         },
                         "labelPosition" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "top"
                         },
                         "labelWidth" : {
                           "type" : "constant",
@@ -497,7 +497,7 @@
                           "value" : "formInput.datosSolicitudInput.licenciatura"
                         }
                       },
-                      "reference" : "2f01e81c-62c3-47a3-beb6-76cae9131a29",
+                      "reference" : "5f0a5288-8e07-46f8-801e-350cf47c4202",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     }
@@ -507,7 +507,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 12,
+                        "sm" : 8,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -538,11 +538,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Periodo de ingreso:"
+                          "value" : "Periodo de ingreso"
                         },
                         "labelPosition" : {
                           "type" : "constant",
-                          "value" : "left"
+                          "value" : "top"
                         },
                         "labelWidth" : {
                           "type" : "constant",
@@ -568,7 +568,7 @@
                           "value" : "formInput.datosSolicitudInput.periodo_de_ingreso"
                         }
                       },
-                      "reference" : "e5d428b2-44a6-418f-a97c-ae7f352342b6",
+                      "reference" : "cc36de3d-c9fc-4b55-9805-29a912865277",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
                     }
@@ -672,7 +672,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "255a56a3-3e9c-4bd4-bb82-6e4243f9f024",
+                "reference" : "e49e89d0-882d-4763-b170-92db535b1fd4",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -732,7 +732,7 @@
                     "value" : 4
                   }
                 },
-                "reference" : "85366e1c-2c95-4c8d-b5a9-9b370b6fa698",
+                "reference" : "6b486b65-4efd-4e0c-83eb-4ad71fe85eec",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -749,8 +749,8 @@
       "value" : [
         "{\r",
         "  \"datosSolicitudInput\" : {\r",
-        "    \"licenciatura\" : \"\",\r",
-        "    \"periodo_de_ingreso\" : \"\"\r",
+        "    \"licenciatura\" : null,\r",
+        "    \"periodo_de_ingreso\" : null\r",
         "  }\r",
         "}"
       ],
@@ -777,17 +777,10 @@
         "return {",
         "\tdatosSolicitudInput: {",
         "\t    licenciatura_id: $data.formInput.datosSolicitudInput.licenciatura.persistenceId,",
-        "\t    periodo_de_ingreso_id: $data.formInput.datosSolicitudInput.periodo_de_ingreso.persistenceId",
+        "\t    periodo_de_ingreso_id: $data.formInput.datosSolicitudInput.periodo_de_ingreso.persistenceId,",
         "\t},",
         "\tuserIdInput: $data.loggedUser.user_id",
         "}"
-      ],
-      "exposed" : false
-    },
-    "periodos_disponibles" : {
-      "type" : "url",
-      "value" : [
-        "..{{ licenciaturaSeleccionada.links[0].href }}"
       ],
       "exposed" : false
     },
@@ -795,6 +788,13 @@
       "type" : "url",
       "value" : [
         "../API/bdm/businessData/com.company.model.Licenciatura?q=find&p=0&c=99&f=activo=true"
+      ],
+      "exposed" : false
+    },
+    "periodos_disponibles" : {
+      "type" : "url",
+      "value" : [
+        "..{{ licenciaturaSeleccionada.links[0].href }}"
       ],
       "exposed" : false
     },
@@ -816,7 +816,6 @@
       "type" : "expression",
       "value" : [
         "var licenciaturaSeleccionada = $data.formInput.datosSolicitudInput.licenciatura;",
-        "",
         "return licenciaturaSeleccionada;"
       ],
       "exposed" : false
@@ -824,14 +823,14 @@
   },
   "assets" : [
     {
-      "id" : "36a1103a-bf30-46ae-b21f-40bb74c00f07",
+      "id" : "b416db19-7b6f-4e8e-9e7e-c9d5609ba779",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "7dd42656-b628-415a-9efa-db616b74e9b4",
+      "id" : "af4a135b-f21e-498b-996c-1b562174c928",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
