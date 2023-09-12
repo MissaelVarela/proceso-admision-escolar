@@ -1,10 +1,10 @@
 {
-  "id" : "RegistroDeSolicitudForm",
-  "name" : "RegistroDeSolicitudForm",
+  "id" : "registroDeSolicitudForm",
+  "name" : "registroDeSolicitudForm",
   "type" : "form",
   "uuid" : "b6e8e05d-b6ea-45db-bd97-34e21896b545",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694500530194,
+  "lastUpdate" : 1694510602731,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -489,11 +489,12 @@
                           "value" : "nombre"
                         },
                         "returnedKey" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : ""
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.solicitudInput.licenciatura"
+                          "value" : "formInput.datosSolicitudInput.licenciatura"
                         }
                       },
                       "reference" : "2f01e81c-62c3-47a3-beb6-76cae9131a29",
@@ -564,7 +565,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.solicitudInput.periodo_de_ingreso"
+                          "value" : "formInput.datosSolicitudInput.periodo_de_ingreso"
                         }
                       },
                       "reference" : "e5d428b2-44a6-418f-a97c-ae7f352342b6",
@@ -774,26 +775,19 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tdatosSolicitudInput: $data.formInput.solicitudInput,",
+        "\tdatosSolicitudInput: {",
+        "\t    licenciatura_id: $data.formInput.datosSolicitudInput.licenciatura.persistenceId,",
+        "\t    periodo_de_ingreso_id: $data.formInput.datosSolicitudInput.periodo_de_ingreso.persistenceId",
+        "\t},",
         "\tuserIdInput: $data.loggedUser.user_id",
         "}"
       ],
       "exposed" : false
     },
     "periodos_disponibles" : {
-      "type" : "json",
+      "type" : "url",
       "value" : [
-        "[",
-        "    {",
-        "        \"nombre\": \"Agosto 2023\"",
-        "    },",
-        "    {",
-        "        \"nombre\": \"Enero 2024\"",
-        "    },",
-        "    {",
-        "        \"nombre\": \"Agosto 2024\"",
-        "    }",
-        "]"
+        "..{{ licenciaturaSeleccionada.links[0].href }}"
       ],
       "exposed" : false
     },
@@ -821,7 +815,7 @@
     "licenciaturaSeleccionada" : {
       "type" : "expression",
       "value" : [
-        "var licenciaturaSeleccionada = $data.formInput.licenciatura;",
+        "var licenciaturaSeleccionada = $data.formInput.datosSolicitudInput.licenciatura;",
         "",
         "return licenciaturaSeleccionada;"
       ],

@@ -104,19 +104,21 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_xRzZ4E0NEe6B0fBcehHfGA" name="solicitud" dataType="_FtC2eExHEe6TSNn8I2TD_w" className="com.company.model.Solicitud">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_D4zp4E0REe6B0fBcehHfGA" name="initSolicitud()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;def processAPI = apiAccessor.getProcessAPI()&#xD;&#xA;def processInstance = processAPI.getProcessInstance(processInstanceId)&#xD;&#xA;&#xD;&#xA;// Creando la nueva solicitud.&#xD;&#xA;def solicitud = new com.company.model.Solicitud()&#xD;&#xA;&#xD;&#xA;solicitud.setAspirante_id(userIdInput)&#xD;&#xA;solicitud.setStatus(&quot;nueva&quot;)&#xD;&#xA;solicitud.setFecha_inicio(OffsetDateTime.now())&#xD;&#xA;solicitud.setFiltros(new com.company.model.Filtros())&#xD;&#xA;&#xD;&#xA;def datosSolitud = new com.company.model.DatosSolicitud()&#xD;&#xA;datosSolitud.setLicenciatura(datosSolicitudInput?.licenciatura)&#xD;&#xA;datosSolitud.setPeriodo_de_ingreso(datosSolicitudInput?.periodo_de_ingreso)&#xD;&#xA;&#xD;&#xA;def informacion = new com.company.model.Informacion()&#xD;&#xA;informacion.setDatos_personales(new com.company.model.DatosPersonales())&#xD;&#xA;informacion.setDatos_escuela_cursada(new com.company.model.DatosEscuelaCursada())&#xD;&#xA;informacion.setDatos_solicitud(datosSolitud)&#xD;&#xA;&#xD;&#xA;solicitud.setInformacion(informacion)&#xD;&#xA;&#x9;&#xD;&#xA;return solicitud&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_77F4MFD8Ee62npWVvhJzIQ" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_77GfQFD8Ee62npWVvhJzIQ" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_77GfQVD8Ee62npWVvhJzIQ" name="userIdInput" type="LONG">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_77GfQlD8Ee62npWVvhJzIQ"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_D4zp4E0REe6B0fBcehHfGA" name="initSolicitud()" content="import java.time.OffsetDateTime&#xD;&#xA;&#xD;&#xA;def processAPI = apiAccessor.getProcessAPI()&#xD;&#xA;def processInstance = processAPI.getProcessInstance(processInstanceId)&#xD;&#xA;&#xD;&#xA;// Creando la nueva solicitud.&#xD;&#xA;def solicitud = new com.company.model.Solicitud()&#xD;&#xA;&#xD;&#xA;solicitud.setAspirante_id(userIdInput)&#xD;&#xA;solicitud.setStatus(&quot;nueva&quot;)&#xD;&#xA;solicitud.setFecha_inicio(OffsetDateTime.now())&#xD;&#xA;solicitud.setFiltros(new com.company.model.Filtros())&#xD;&#xA;&#xD;&#xA;def datosSolitud = new com.company.model.DatosSolicitud()&#xD;&#xA;def licenciatura = licenciaturaDAO.findByPersistenceId(datosSolicitudInput?.licenciatura_id)&#xD;&#xA;def periodo = periodoDAO.findByPersistenceId(datosSolicitudInput?.periodo_de_ingreso_id)&#xD;&#xA;datosSolitud.setLicenciatura(licenciatura)&#xD;&#xA;datosSolitud.setPeriodo_de_ingreso(periodo)&#xD;&#xA;&#xD;&#xA;def informacion = new com.company.model.Informacion()&#xD;&#xA;informacion.setDatos_personales(new com.company.model.DatosPersonales())&#xD;&#xA;informacion.setDatos_escuela_cursada(new com.company.model.DatosEscuelaCursada())&#xD;&#xA;informacion.setDatos_solicitud(datosSolitud)&#xD;&#xA;&#xD;&#xA;solicitud.setInformacion(informacion)&#xD;&#xA;&#x9;&#xD;&#xA;solicitud.setStatus(&quot;nueva test&quot;)&#xD;&#xA;return solicitud&#xD;&#xA;&#xD;&#xA;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_iP7h8FFGEe6neaQDJV7ZpA" name="processInstanceId" content="processInstanceId" type="TYPE_ENGINE_CONSTANT" returnType="java.lang.Long"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_iP7h8VFGEe6neaQDJV7ZpA" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_iP7h8lFGEe6neaQDJV7ZpA" name="userIdInput" type="LONG">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_iP7h81FGEe6neaQDJV7ZpA"/>
           </referencedElements>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_77GfQ1D8Ee62npWVvhJzIQ" name="datosSolicitudInput" type="COMPLEX">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_77GfRFD8Ee62npWVvhJzIQ"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_iP7h9FFGEe6neaQDJV7ZpA" name="datosSolicitudInput" type="COMPLEX">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_iP7h9VFGEe6neaQDJV7ZpA"/>
           </referencedElements>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_iP7h9lFGEe6neaQDJV7ZpA" name="licenciaturaDAO" content="licenciaturaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.LicenciaturaDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_iP7h91FGEe6neaQDJV7ZpA" name="periodoDAO" content="periodoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PeriodoDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_FtdGIExHEe6TSNn8I2TD_w">
-        <targetForm xmi:type="expression:Expression" xmi:id="_JiWV4FDuEe62npWVvhJzIQ" name="RegistroDeSolicitudForm" content="b6e8e05d-b6ea-45db-bd97-34e21896b545" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_JiWV4FDuEe62npWVvhJzIQ" name="registroDeSolicitudForm" content="b6e8e05d-b6ea-45db-bd97-34e21896b545" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_FtdGIkxHEe6TSNn8I2TD_w">
         <targetForm xmi:type="expression:Expression" xmi:id="_FtdGI0xHEe6TSNn8I2TD_w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -183,10 +185,10 @@
       <contract xmi:type="process:Contract" xmi:id="_FtdGJExHEe6TSNn8I2TD_w">
         <inputs xmi:type="process:ContractInput" xmi:id="_j-KnUE0SEe6B0fBcehHfGA" name="datosSolicitudInput" type="COMPLEX">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_j-LOYE0SEe6B0fBcehHfGA"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_mi2KkE0SEe6B0fBcehHfGA" name="licenciatura">
+          <inputs xmi:type="process:ContractInput" xmi:id="_mi2KkE0SEe6B0fBcehHfGA" name="licenciatura_id" type="LONG">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_mi2KkU0SEe6B0fBcehHfGA"/>
           </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodo_de_ingreso">
+          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodo_de_ingreso_id" type="LONG">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_qADRQU0SEe6B0fBcehHfGA"/>
           </inputs>
         </inputs>
