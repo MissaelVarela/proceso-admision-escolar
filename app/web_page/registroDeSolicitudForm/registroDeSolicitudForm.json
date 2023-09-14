@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3713f576-9116-4038-8beb-98dfe3c4d403",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694513461050,
+  "lastUpdate" : 1694672117809,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -776,8 +776,8 @@
       "value" : [
         "return {",
         "\tdatosSolicitudInput: {",
-        "\t    licenciatura_id: $data.formInput.datosSolicitudInput.licenciatura.persistenceId,",
-        "\t    periodo_de_ingreso_id: $data.formInput.datosSolicitudInput.periodo_de_ingreso.persistenceId,",
+        "\t    licenciaturaId: $data.formInput.datosSolicitudInput.licenciatura.persistenceId,",
+        "\t    periodoDeIngresoId: $data.formInput.datosSolicitudInput.periodo_de_ingreso.persistenceId,",
         "\t},",
         "\tuserIdInput: $data.loggedUser.user_id",
         "}"

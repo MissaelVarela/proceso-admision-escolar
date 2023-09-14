@@ -189,10 +189,10 @@
       <contract xmi:type="process:Contract" xmi:id="_FtdGJExHEe6TSNn8I2TD_w">
         <inputs xmi:type="process:ContractInput" xmi:id="_j-KnUE0SEe6B0fBcehHfGA" name="datosSolicitudInput" type="COMPLEX">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_j-LOYE0SEe6B0fBcehHfGA"/>
-          <inputs xmi:type="process:ContractInput" xmi:id="_mi2KkE0SEe6B0fBcehHfGA" name="licenciatura_id" type="LONG">
+          <inputs xmi:type="process:ContractInput" xmi:id="_mi2KkE0SEe6B0fBcehHfGA" name="licenciaturaId" type="LONG">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_mi2KkU0SEe6B0fBcehHfGA"/>
           </inputs>
-          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodo_de_ingreso_id" type="LONG">
+          <inputs xmi:type="process:ContractInput" xmi:id="_qADRQE0SEe6B0fBcehHfGA" name="periodoDeIngresoId" type="LONG">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_qADRQU0SEe6B0fBcehHfGA"/>
           </inputs>
         </inputs>
