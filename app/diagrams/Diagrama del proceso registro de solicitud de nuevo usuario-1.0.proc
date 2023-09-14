@@ -75,7 +75,26 @@
         <condition xmi:type="expression:Expression" xmi:id="_EEo0ElJvEe6IHqFxitJp3Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_qrkFW1JpEe6IHqFxitJp3Q" name="Público" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_qrkFXFJpEe6IHqFxitJp3Q"/>
+      <contract xmi:type="process:Contract" xmi:id="_qrkFXFJpEe6IHqFxitJp3Q">
+        <inputs xmi:type="process:ContractInput" xmi:id="_UThBYFK6Ee6Ow4TIpAPJ8w" name="userInput" type="COMPLEX">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_UThBYVK6Ee6Ow4TIpAPJ8w"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_WKuaoFK6Ee6Ow4TIpAPJ8w" name="userName">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_WKuaoVK6Ee6Ow4TIpAPJ8w"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Yc1nMFK6Ee6Ow4TIpAPJ8w" name="password">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_Yc1nMVK6Ee6Ow4TIpAPJ8w"/>
+          </inputs>
+        </inputs>
+        <inputs xmi:type="process:ContractInput" xmi:id="_e1KbMFK6Ee6Ow4TIpAPJ8w" name="datosSolicitudInput" type="COMPLEX">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_e1KbMVK6Ee6Ow4TIpAPJ8w"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_J2kE4FK7Ee6Ow4TIpAPJ8w" name="licenciaturaId" type="LONG">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_J2kE4VK7Ee6Ow4TIpAPJ8w"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_Ktu9cFK7Ee6Ow4TIpAPJ8w" name="periodoDeIngresoId" type="LONG">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_Ktu9cVK7Ee6Ow4TIpAPJ8w"/>
+          </inputs>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_qrkFXVJpEe6IHqFxitJp3Q">
         <name xmi:type="expression:Expression" xmi:id="_qrkFXlJpEe6IHqFxitJp3Q" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_qrkFX1JpEe6IHqFxitJp3Q" content="" returnTypeFixed="true"/>
@@ -165,7 +184,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_qrkscFJpEe6IHqFxitJp3Q" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_qrkscVJpEe6IHqFxitJp3Q"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_qrksclJpEe6IHqFxitJp3Q"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qrksc1JpEe6IHqFxitJp3Q" x="48" y="10" width="1297" height="389"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qrksc1JpEe6IHqFxitJp3Q" x="23" y="10" width="1297" height="370"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_qrksdFJpEe6IHqFxitJp3Q"/>
