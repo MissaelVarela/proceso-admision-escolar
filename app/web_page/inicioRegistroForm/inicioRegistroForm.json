@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3f6200a2-c8c9-48aa-8452-ecc62ef000b0",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694680898348,
+  "lastUpdate" : 1694817270158,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -149,11 +149,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.correo"
+                          "value" : "formInput.datosUserInput.correo"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "4c545e85-f5a1-4edb-9074-f1095f1af3a6",
@@ -213,11 +239,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.password"
+                          "value" : "formInput.datosUserInput.password"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "46bc4249-f346-441b-8af3-ea0191042270",
@@ -277,11 +329,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.primerNombre"
+                          "value" : "formInput.datosUserInput.primerNombre"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "1d8c352f-6c2e-4f49-9977-ee845c492a86",
@@ -341,11 +419,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.segundoNombre"
+                          "value" : "formInput.datosUserInput.segundoNombre"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "7502be95-164a-4ea8-a1ba-8f2e29ded476",
@@ -405,11 +509,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.primerApellido"
+                          "value" : "formInput.datosUserInput.primerApellido"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "f643b1cc-3554-4257-bafa-021781ef4b03",
@@ -469,11 +599,37 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.userInput.segundoApellido"
+                          "value" : "formInput.datosUserInput.segundoApellido"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "1d8eed2b-dd9f-49f8-b9aa-a5b4fe44aeab",
@@ -612,6 +768,32 @@
                         "required" : {
                           "type" : "constant",
                           "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "00da3898-ac13-45b5-ba9b-54094371ccb2",
@@ -710,11 +892,11 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "primary"
+                    "value" : "success"
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Registrar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -760,6 +942,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "6148ac57-c6ba-4980-a352-af6458353bf2",
@@ -830,7 +1033,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"userInput\" : {\r",
+        "  \"datosUserInput\" : {\r",
         "    \"correo\" : \"\",\r",
         "    \"password\" : \"\",\r",
         "    \"primerNombre\" : \"\",\r",
@@ -865,7 +1068,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tuserInput: $data.formInput.userInput,",
+        "\tdatosUserInput: $data.formInput.datosUserInput,",
         "\tdatosSolicitudInput: $data.formInput.datosSolicitudInput",
         "}"
       ],

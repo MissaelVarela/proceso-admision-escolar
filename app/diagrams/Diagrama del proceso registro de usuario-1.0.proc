@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_E7ERUFJlEe6IHqFxitJp3Q" name="Diagrama del proceso registro de usuario" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_E7ERUVJlEe6IHqFxitJp3Q" name="Registro de usuario">
-      <elements xmi:type="process:Lane" xmi:id="_E7ERUlJlEe6IHqFxitJp3Q" name="system" actor="_WDn4QFJmEe6IHqFxitJp3Q">
+      <elements xmi:type="process:Lane" xmi:id="_E7ERUlJlEe6IHqFxitJp3Q" name="system">
         <elements xmi:type="process:StartEvent" xmi:id="_E7ERU1JlEe6IHqFxitJp3Q" name="Inicio registro" outgoing="_E7ERaFJlEe6IHqFxitJp3Q">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_E7ERVFJlEe6IHqFxitJp3Q" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_E7ERVVJlEe6IHqFxitJp3Q" name="" content="" returnTypeFixed="true"/>
@@ -24,8 +24,18 @@
           <stepSummary xmi:type="expression:Expression" xmi:id="_TrRWQ1JlEe6IHqFxitJp3Q" name="" content="" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_E7ERZFJlEe6IHqFxitJp3Q">
-        <targetForm xmi:type="expression:Expression" xmi:id="_E7ERZVJlEe6IHqFxitJp3Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <data xmi:type="process:JavaObjectData" xmi:id="_grEm4FQNEe6cg68iSoraXg" name="datosUser" dataType="_E7ERglJlEe6IHqFxitJp3Q" className="java.util.Map">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_grEm4VQNEe6cg68iSoraXg" name="init_datosUser()" content="if (datosUserInput) {&#xD;&#xA;&#x9;if (!datosUserInput.correo) {&#xD;&#xA;&#x9;&#x9;throw new Exception(&quot;El campo correo en el contrato datosUserInput es obligatoria en el proceso Registro de usuario.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;if (!datosUserInput.password) {&#xD;&#xA;&#x9;&#x9;throw new Exception(&quot;El campo password en el contrato datosUserInput es obligatoria en el proceso Registro de usuario.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;if (!datosUserInput.primerNombre) {&#xD;&#xA;&#x9;&#x9;throw new Exception(&quot;El campo primerNombre en el contrato datosUserInput es obligatoria en el proceso Registro de usuario.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;if (!datosUserInput.primerApellido) {&#xD;&#xA;&#x9;&#x9;throw new Exception(&quot;El campo primerApellido en el contrato datosUserInput es obligatoria en el proceso Registro de usuario.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;return datosUserInput&#xD;&#xA;}&#xD;&#xA;else {&#xD;&#xA;&#x9;throw new Exception(&quot;El contrato datosUserInput no puede ser vacio en el proceso Registro de usuario.&quot;)&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// Sin verificar seria asi:&#xD;&#xA;// return datosUserInput" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.Map">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_rr5L0FQUEe6cg68iSoraXg" name="datosUserInput" type="COMPLEX">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_rr5L0VQUEe6cg68iSoraXg"/>
+          </referencedElements>
+        </defaultValue>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_TTRbIFQUEe6cg68iSoraXg" name="esCreadoCorrectamente" dataType="_E7ERfFJlEe6IHqFxitJp3Q">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_TTRbIVQUEe6cg68iSoraXg" name="false" content="false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
+      </data>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_E7ERZFJlEe6IHqFxitJp3Q" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_Z3UlsFQOEe6cg68iSoraXg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_E7ERZlJlEe6IHqFxitJp3Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_E7ERZ1JlEe6IHqFxitJp3Q" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -38,8 +48,29 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_TrTygVJlEe6IHqFxitJp3Q"/>
         <condition xmi:type="expression:Expression" xmi:id="_TrTyglJlEe6IHqFxitJp3Q" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_WDn4QFJmEe6IHqFxitJp3Q" name="system"/>
-      <contract xmi:type="process:Contract" xmi:id="_E7ERbFJlEe6IHqFxitJp3Q"/>
+      <contract xmi:type="process:Contract" xmi:id="_E7ERbFJlEe6IHqFxitJp3Q">
+        <inputs xmi:type="process:ContractInput" xmi:id="_YyPe4FQMEe6cg68iSoraXg" name="datosUserInput" type="COMPLEX">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_YyPe4VQMEe6cg68iSoraXg"/>
+          <inputs xmi:type="process:ContractInput" xmi:id="_cqSHcFQMEe6cg68iSoraXg" name="correo">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_cqSHcVQMEe6cg68iSoraXg"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_duYowFQMEe6cg68iSoraXg" name="password">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_duYowVQMEe6cg68iSoraXg"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_e51IMFQMEe6cg68iSoraXg" name="primerNombre">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_e51IMVQMEe6cg68iSoraXg"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_grNmQFQMEe6cg68iSoraXg" name="segundoNombre">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_grNmQVQMEe6cg68iSoraXg"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_hWYqMFQMEe6cg68iSoraXg" name="primerApellido">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_hWYqMVQMEe6cg68iSoraXg"/>
+          </inputs>
+          <inputs xmi:type="process:ContractInput" xmi:id="_ivCfMFQMEe6cg68iSoraXg" name="segundoApellido">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_ivCfMVQMEe6cg68iSoraXg"/>
+          </inputs>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_E7ERbVJlEe6IHqFxitJp3Q">
         <name xmi:type="expression:Expression" xmi:id="_E7ERblJlEe6IHqFxitJp3Q" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_E7ERb1JlEe6IHqFxitJp3Q" content="" returnTypeFixed="true"/>
