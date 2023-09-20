@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:parameter="http://www.bonitasoft.org/ns/studio/parameter" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_Qi88wFNdEe6HSdqMuLpmQA" name="Diagrama del proceso notificar" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_Qi88wVNdEe6HSdqMuLpmQA" name="Notificar">
-      <elements xmi:type="process:Lane" xmi:id="_Qi88wlNdEe6HSdqMuLpmQA" name="Employee lane" actor="_Qi8821NdEe6HSdqMuLpmQA">
+      <elements xmi:type="process:Lane" xmi:id="_Qi88wlNdEe6HSdqMuLpmQA" name="Employee lane">
         <elements xmi:type="process:StartEvent" xmi:id="_Qi88w1NdEe6HSdqMuLpmQA" name="Start1" outgoing="_Qi882FNdEe6HSdqMuLpmQA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Qi88xFNdEe6HSdqMuLpmQA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Qi88xVNdEe6HSdqMuLpmQA" name="" content="" returnTypeFixed="true"/>
@@ -145,7 +145,7 @@
       <data xmi:type="process:Data" xmi:id="_ESKQcFgGEe6FUOdyUvKjdw" name="enviadoCorrectamente" dataType="_Qi887FNdEe6HSdqMuLpmQA">
         <defaultValue xmi:type="expression:Expression" xmi:id="_ESKQcVgGEe6FUOdyUvKjdw" name="init_enviadoCorrectamente()" content="false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_Qi881FNdEe6HSdqMuLpmQA">
+      <formMapping xmi:type="process:FormMapping" xmi:id="_Qi881FNdEe6HSdqMuLpmQA" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_RTy4sFZvEe6WWMXPz4ylkg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_Qi881lNdEe6HSdqMuLpmQA">
@@ -167,7 +167,6 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_vjyugFgGEe6FUOdyUvKjdw"/>
         <condition xmi:type="expression:Expression" xmi:id="_vjyugVgGEe6FUOdyUvKjdw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_Qi8821NdEe6HSdqMuLpmQA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_LjvfQFZnEe6WWMXPz4ylkg" name="mailhost" typeClassname="java.lang.String"/>
       <parameters xmi:type="parameter:Parameter" xmi:id="_MynGIFZnEe6WWMXPz4ylkg" name="mailPort" typeClassname="java.lang.Integer"/>
       <contract xmi:type="process:Contract" xmi:id="_Qi883FNdEe6HSdqMuLpmQA">
