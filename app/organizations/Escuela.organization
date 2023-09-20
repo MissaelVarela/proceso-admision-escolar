@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="Escuela">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="invitado">
+      <firstName>Usuario</firstName>
+      <lastName>Invitado</lastName>
+      <title></title>
+      <jobTitle></jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">s6FtGrArvTp6aEF7P6Dqeb35MXzkv36u</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="walter.bates">
+      <firstName>Walter</firstName>
+      <lastName>Bates</lastName>
+      <title>Mr</title>
+      <jobTitle></jobTitle>
+      <manager>helen.kelly</manager>
+      <personalData/>
+      <professionalData>
+        <email>walter.bates@acme.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="helen.kelly">
+      <firstName>Helen</firstName>
+      <lastName>Kelly</lastName>
+      <title>Mrs</title>
+      <manager>william.jobs</manager>
+      <personalData/>
+      <professionalData>
+        <email>helen.kelly@acme.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="william.jobs">
+      <firstName>William</firstName>
+      <lastName>Jobs</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData>
+        <email>william.jobs@acme.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="thomas.wallis">
+      <firstName>Thomas</firstName>
+      <lastName>Wallis</lastName>
+      <title>Mr</title>
+      <manager>william.jobs</manager>
+      <personalData/>
+      <professionalData>
+        <email>thomas.wallis@acme.com</email>
+      </professionalData>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="empleado">
+      <displayName>Empleado</displayName>
+    </role>
+    <role name="aspirante">
+      <displayName>Aspirante</displayName>
+    </role>
+    <role name="invitado">
+      <displayName>Invitado</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="escuela">
+      <displayName>Escuela</displayName>
+    </group>
+    <group name="admisiones" parentPath="/escuela">
+      <displayName>Admisiones</displayName>
+    </group>
+    <group name="revisión" parentPath="/escuela">
+      <displayName>Revisión</displayName>
+    </group>
+    <group name="aspirantes">
+      <displayName>Aspirantes</displayName>
+    </group>
+    <group name="adminitración" parentPath="/escuela">
+      <displayName>Adminitración</displayName>
+    </group>
+    <group name="aprobados" parentPath="/aspirantes">
+      <displayName>Aprobados</displayName>
+    </group>
+    <group name="rechazados" parentPath="/aspirantes">
+      <displayName>Rechazados</displayName>
+    </group>
+    <group name="público">
+      <displayName>Público</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>invitado</userName>
+      <roleName>invitado</roleName>
+      <groupName>público</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>empleado</roleName>
+      <groupName>revisión</groupName>
+      <groupParentPath>/escuela</groupParentPath>
+    </membership>
+    <membership>
+      <userName>helen.kelly</userName>
+      <roleName>empleado</roleName>
+      <groupName>admisiones</groupName>
+      <groupParentPath>/escuela</groupParentPath>
+    </membership>
+    <membership>
+      <userName>william.jobs</userName>
+      <roleName>empleado</roleName>
+      <groupName>escuela</groupName>
+    </membership>
+    <membership>
+      <userName>thomas.wallis</userName>
+      <roleName>empleado</roleName>
+      <groupName>escuela</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
