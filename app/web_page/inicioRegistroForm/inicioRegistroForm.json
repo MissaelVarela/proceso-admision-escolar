@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3f6200a2-c8c9-48aa-8452-ecc62ef000b0",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695086331600,
+  "lastUpdate" : 1695289367452,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -60,7 +60,7 @@
                   },
                   "type" : {
                     "type" : "constant",
-                    "value" : "tabs"
+                    "value" : "pills"
                   }
                 },
                 "reference" : "84da1528-74e0-449e-a41f-ebfaed1664ca",
@@ -86,7 +86,7 @@
                       },
                       "disabled" : {
                         "type" : "constant",
-                        "value" : false
+                        "value" : true
                       },
                       "allowHTML" : {
                         "type" : "constant",
@@ -97,7 +97,8 @@
                         "value" : "Inicia tu solicitud de admisión"
                       },
                       "active" : {
-                        "type" : "variable"
+                        "type" : "variable",
+                        "value" : "tabs[0].value"
                       }
                     },
                     "reference" : "4124ac32-de7f-4795-8bd1-6785336f9482",
@@ -167,7 +168,7 @@
                                     },
                                     "text" : {
                                       "type" : "interpolation",
-                                      "value" : "Datos de la solicitud"
+                                      "value" : "<br>Datos de la solicitud"
                                     },
                                     "alignment" : {
                                       "type" : "constant",
@@ -179,7 +180,7 @@
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : true
                                     }
                                   },
                                   "reference" : "39393cbf-d334-4b81-a61c-660fc102b523",
@@ -194,8 +195,8 @@
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 12,
-                                    "lg" : 12
+                                    "md" : 6,
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -224,7 +225,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Licenciatura"
+                                      "value" : "Elige la licenciatura a estudiar"
                                     },
                                     "labelPosition" : {
                                       "type" : "constant",
@@ -257,16 +258,14 @@
                                   "reference" : "cfab99ab-767a-4613-8c98-aab9bcd0fb6a",
                                   "hasValidationError" : false,
                                   "id" : "pbSelect"
-                                }
-                              ],
-                              [
+                                },
                                 {
                                   "type" : "component",
                                   "dimension" : {
                                     "xs" : 12,
                                     "sm" : 12,
-                                    "md" : 12,
-                                    "lg" : 12
+                                    "md" : 6,
+                                    "lg" : 6
                                   },
                                   "propertyValues" : {
                                     "cssClasses" : {
@@ -295,7 +294,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Periodo de ingreso"
+                                      "value" : "Elige el período de ingreso"
                                     },
                                     "labelPosition" : {
                                       "type" : "constant",
@@ -350,7 +349,7 @@
                                     },
                                     "disabled" : {
                                       "type" : "expression",
-                                      "value" : "firstTabComplete"
+                                      "value" : "!firstTabCompleted"
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -370,7 +369,7 @@
                                     },
                                     "action" : {
                                       "type" : "constant",
-                                      "value" : "Submit task"
+                                      "value" : "Add to collection"
                                     },
                                     "assign" : {
                                       "type" : "constant",
@@ -399,7 +398,8 @@
                                       "type" : "interpolation"
                                     },
                                     "collectionToModify" : {
-                                      "type" : "variable"
+                                      "type" : "variable",
+                                      "value" : "tabSelector"
                                     },
                                     "modalId" : {
                                       "type" : "constant",
@@ -410,7 +410,8 @@
                                       "value" : "Last"
                                     },
                                     "valueToAdd" : {
-                                      "type" : "constant"
+                                      "type" : "expression",
+                                      "value" : "1"
                                     },
                                     "removeItem" : {
                                       "type" : "variable"
@@ -445,8 +446,8 @@
                         "value" : false
                       },
                       "disabled" : {
-                        "type" : "expression",
-                        "value" : "firstTabComplete"
+                        "type" : "constant",
+                        "value" : true
                       },
                       "allowHTML" : {
                         "type" : "constant",
@@ -457,7 +458,8 @@
                         "value" : "Confirmación de los datos del aspirante"
                       },
                       "active" : {
-                        "type" : "variable"
+                        "type" : "variable",
+                        "value" : "tabs[1].value"
                       }
                     },
                     "reference" : "575a992e-29d7-4dff-a04a-6c006042dc5f",
@@ -527,7 +529,7 @@
                                     },
                                     "text" : {
                                       "type" : "interpolation",
-                                      "value" : "Datos del usuario"
+                                      "value" : "<br>Datos del usuario"
                                     },
                                     "alignment" : {
                                       "type" : "constant",
@@ -539,7 +541,7 @@
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
-                                      "value" : false
+                                      "value" : true
                                     }
                                   },
                                   "reference" : "6c768cdd-1233-4a7c-b44a-1b1f517c3757",
@@ -845,7 +847,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Contraseñas coinciden"
+                                      "value" : "{{ passwordsMatchText }}"
                                     },
                                     "value" : {
                                       "type" : "variable",
@@ -1002,7 +1004,7 @@
                                     },
                                     "required" : {
                                       "type" : "constant",
-                                      "value" : true
+                                      "value" : false
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -1182,7 +1184,7 @@
                                     },
                                     "required" : {
                                       "type" : "constant",
-                                      "value" : true
+                                      "value" : false
                                     },
                                     "allowHTML" : {
                                       "type" : "constant",
@@ -1221,8 +1223,8 @@
                                 {
                                   "type" : "component",
                                   "dimension" : {
-                                    "xs" : 12,
-                                    "sm" : 12,
+                                    "xs" : 6,
+                                    "sm" : 6,
                                     "md" : 6,
                                     "lg" : 6
                                   },
@@ -1257,7 +1259,7 @@
                                     },
                                     "action" : {
                                       "type" : "constant",
-                                      "value" : "Submit task"
+                                      "value" : "Add to collection"
                                     },
                                     "assign" : {
                                       "type" : "constant",
@@ -1286,7 +1288,8 @@
                                       "type" : "interpolation"
                                     },
                                     "collectionToModify" : {
-                                      "type" : "variable"
+                                      "type" : "variable",
+                                      "value" : "tabSelector"
                                     },
                                     "modalId" : {
                                       "type" : "constant",
@@ -1297,7 +1300,8 @@
                                       "value" : "Last"
                                     },
                                     "valueToAdd" : {
-                                      "type" : "constant"
+                                      "type" : "expression",
+                                      "value" : "0"
                                     },
                                     "removeItem" : {
                                       "type" : "variable"
@@ -1311,8 +1315,8 @@
                                   "type" : "component",
                                   "dimension" : {
                                     "md" : 6,
-                                    "sm" : 12,
-                                    "xs" : 12,
+                                    "sm" : 6,
+                                    "xs" : 6,
                                     "lg" : 6
                                   },
                                   "propertyValues" : {
@@ -1488,12 +1492,12 @@
       "value" : [
         "{\r",
         "  \"datosUserInput\" : {\r",
-        "    \"correo\" : \"\",\r",
-        "    \"password\" : \"\",\r",
-        "    \"primerNombre\" : \"\",\r",
-        "    \"segundoNombre\" : \"\",\r",
-        "    \"primerApellido\" : \"\",\r",
-        "    \"segundoApellido\" : \"\"\r",
+        "    \"correo\" : null,\r",
+        "    \"password\" : null,\r",
+        "    \"primerNombre\" : null,\r",
+        "    \"segundoNombre\" : null,\r",
+        "    \"primerApellido\" : null,\r",
+        "    \"segundoApellido\" : null\r",
         "  },\r",
         "  \"datosSolicitudInput\" : {\r",
         "    \"licenciaturaId\" : null,\r",
@@ -1531,7 +1535,7 @@
     "passwordsMatch" : {
       "type" : "expression",
       "value" : [
-        "return $data.formInput.datosUserInput.password === $data.passwordConfirmation.value;"
+        "return $data.formInput.datosUserInput.password && ($data.formInput.datosUserInput.password === $data.passwordConfirmation.value)"
       ],
       "exposed" : false
     },
@@ -1549,16 +1553,12 @@
       "value" : [
         "[",
         "    {",
-        "        ",
-        "    }    ",
+        "        \"value\": true",
+        "    },",
+        "    {",
+        "        \"value\": false",
+        "    }",
         "]"
-      ],
-      "exposed" : false
-    },
-    "firstTabComplete" : {
-      "type" : "expression",
-      "value" : [
-        "return !$data.formInput.datosSolicitudInput.licenciaturaId || !$data.formInput.datosSolicitudInput.periodoDeIngresoId;"
       ],
       "exposed" : false
     },
@@ -1600,6 +1600,44 @@
         "$data.formInput.datosSolicitudInput.periodoDeIngresoId = ($data.periodoSelected)",
         "    ? $data.periodoSelected.persistenceId",
         "    : null"
+      ],
+      "exposed" : false
+    },
+    "passwordsMatchText" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.passwordConfirmation.value && !$data.formInput.datosUserInput.password) {",
+        "    return \"Las contraseñas deben coincidir.\";",
+        "} else {",
+        "    return $data.passwordsMatch ",
+        "        ? \"[✔️] Las contraseñas coinciden.\" ",
+        "        : \"[❌] Las contraseñas no coinciden.\";    ",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "tabSelector" : {
+      "type" : "json",
+      "value" : [
+        "[]"
+      ],
+      "exposed" : false
+    },
+    "tabSelectedCalculator" : {
+      "type" : "expression",
+      "value" : [
+        "// Cada vez que cambie en tamaño del arreglo tabSelector se intepretará que se debe mover al tab con el index del ultimo elemento del tabSelector.",
+        "var tabLength = $data.tabSelector.length;",
+        "var moveTo_index = $data.tabSelector[tabLength - 1];",
+        "$data.tabs[moveTo_index].value = true;"
+      ],
+      "exposed" : false
+    },
+    "firstTabCompleted" : {
+      "type" : "expression",
+      "value" : [
+        "var completed = $data.formInput.datosSolicitudInput.licenciaturaId && $data.formInput.datosSolicitudInput.periodoDeIngresoId;",
+        "return completed;"
       ],
       "exposed" : false
     }
