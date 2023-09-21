@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_F6BMAFNZEe6U0-1x786E9g" name="Diagrama del proceso de Validacion" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_F6BMAVNZEe6U0-1x786E9g" name="Proceso de Validacion">
+  <process:MainProcess xmi:id="_F6BMAFNZEe6U0-1x786E9g" name="Diagrama del proceso validación" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_F6BMAVNZEe6U0-1x786E9g" name="Validación">
       <elements xmi:type="process:Lane" xmi:id="_F6BMAlNZEe6U0-1x786E9g" name="Validador" actor="_F6BMG1NZEe6U0-1x786E9g">
         <elements xmi:type="process:StartEvent" xmi:id="_F6BMA1NZEe6U0-1x786E9g" name="Inicio1" outgoing="_F6BMGFNZEe6U0-1x786E9g">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_F6BMBFNZEe6U0-1x786E9g" name="" content="" returnTypeFixed="true"/>

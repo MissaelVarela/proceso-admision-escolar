@@ -1,10 +1,10 @@
 {
-  "id" : "ValidacionForm",
-  "name" : "ValidacionForm",
+  "id" : "validacionFinalForm",
+  "name" : "validacionFinalForm",
   "type" : "form",
-  "uuid" : "6c88bbad-6a9f-4a21-a297-faed2bc3c84e",
+  "uuid" : "591e33a4-35f4-41f2-a2c2-494fc907772d",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695251809130,
+  "lastUpdate" : 1695325863013,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -23,7 +23,7 @@
             "value" : false
           }
         },
-        "reference" : "f010a352-acf6-4bda-8ddf-b7a66410b7eb",
+        "reference" : "b83f1b78-541d-4e78-a0d1-bfb2ad68f8bf",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -32,7 +32,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "634e5ccc-59a0-413e-827b-b0032817d136",
+          "reference" : "0c7dc94d-4a5b-4224-87e8-9c4eec996a32",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -71,7 +71,7 @@
                     "value" : "left"
                   }
                 },
-                "reference" : "a174648f-25cf-4522-8080-df963185b691",
+                "reference" : "264760f1-f891-481b-89a7-04cdfedd9033",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
               }
@@ -122,7 +122,7 @@
                     "value" : "left"
                   }
                 },
-                "reference" : "0b130a9c-c1e3-49f6-8045-54b996fcb5e9",
+                "reference" : "9601489e-6ebe-4ecf-9c4b-9f3c7aa24427",
                 "hasValidationError" : false,
                 "id" : "pbText"
               }
@@ -181,96 +181,6 @@
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "statusData[2]"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "dataFromError" : {
-                    "type" : "variable"
-                  },
-                  "targetUrlOnSuccess" : {
-                    "type" : "interpolation"
-                  },
-                  "collectionToModify" : {
-                    "type" : "variable"
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "collectionPosition" : {
-                    "type" : "constant",
-                    "value" : "Last"
-                  },
-                  "valueToAdd" : {
-                    "type" : "constant"
-                  },
-                  "removeItem" : {
-                    "type" : "variable"
-                  }
-                },
-                "reference" : "f0548c2a-8ba1-4be0-ae52-ae5ddbe78e4e",
-                "hasValidationError" : false,
-                "id" : "pbButton"
-              },
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 4,
-                  "lg" : 4
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Correción de datos"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "center"
-                  },
-                  "buttonStyle" : {
-                    "type" : "constant",
-                    "value" : "warning"
-                  },
-                  "action" : {
-                    "type" : "constant",
-                    "value" : "Submit task"
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataToSend" : {
-                    "type" : "expression",
                     "value" : "statusData[1]"
                   },
                   "dataFromSuccess" : {
@@ -304,7 +214,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "e2b5f77a-ccf5-48f6-8489-0622cfaede86",
+                "reference" : "011e4fb1-6991-4a71-9ab8-ee2a9d021d75",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               },
@@ -313,8 +223,8 @@
                 "dimension" : {
                   "xs" : 12,
                   "sm" : 12,
-                  "md" : 4,
-                  "lg" : 4
+                  "md" : 8,
+                  "lg" : 8
                 },
                 "propertyValues" : {
                   "cssClasses" : {
@@ -335,7 +245,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Aceptar solicitud"
+                    "value" : "Aprobar solicitud"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -394,7 +304,7 @@
                     "type" : "variable"
                   }
                 },
-                "reference" : "721d5eb8-29e0-47c0-9050-f15c1d60eddf",
+                "reference" : "09d500d0-e566-4ef7-94ca-66f333d4a165",
                 "hasValidationError" : false,
                 "id" : "pbButton"
               }
@@ -441,10 +351,7 @@
       "value" : [
         "[",
         "{",
-        "    \"statusInput\":\"validada\"",
-        "},",
-        "{",
-        "    \"statusInput\":\"modificación\"",
+        "    \"statusInput\":\"aprobada\"",
         "},",
         "{",
         "    \"statusInput\":\"rechazada\"",

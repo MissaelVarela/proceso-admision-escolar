@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_taQTcFZ3Ee620djLttxCTQ" name="Diagrama del proceso de Validacion Final" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_taQTcVZ3Ee620djLttxCTQ" name="Proceso de validación final">
+  <process:MainProcess xmi:id="_taQTcFZ3Ee620djLttxCTQ" name="Diagrama del proceso validacion final" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_taQTcVZ3Ee620djLttxCTQ" name="Validación final">
       <elements xmi:type="process:Lane" xmi:id="_taQTclZ3Ee620djLttxCTQ" name="Admisiones" actor="_taQ6j1Z3Ee620djLttxCTQ">
         <elements xmi:type="process:StartEvent" xmi:id="_taQTc1Z3Ee620djLttxCTQ" name="Inicio" outgoing="_taQ6jFZ3Ee620djLttxCTQ">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_taQTdFZ3Ee620djLttxCTQ" name="" content="" returnTypeFixed="true"/>
@@ -81,7 +81,7 @@
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_taQ6iFZ3Ee620djLttxCTQ">
-        <targetForm xmi:type="expression:Expression" xmi:id="_AJregFgOEe6D6Ktgfk4Obg" name="newForm3" content="8c846bc5-520c-442e-8e3a-f7ada82d1012" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_AJregFgOEe6D6Ktgfk4Obg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_taQ6ilZ3Ee620djLttxCTQ">
         <targetForm xmi:type="expression:Expression" xmi:id="_taQ6i1Z3Ee620djLttxCTQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>

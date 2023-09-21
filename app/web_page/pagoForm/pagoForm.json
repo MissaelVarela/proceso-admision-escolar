@@ -1,10 +1,10 @@
 {
-  "id" : "PagoForm",
-  "name" : "PagoForm",
+  "id" : "pagoForm",
+  "name" : "pagoForm",
   "type" : "form",
   "uuid" : "05b9458c-9e05-490d-8c3c-107d8e03d804",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695252263933,
+  "lastUpdate" : 1695325840898,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [

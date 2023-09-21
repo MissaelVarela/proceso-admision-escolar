@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_q5DO0FcjEe63XajeYYURdw" name="Diagrama del proceso de pago" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_q5DO0VcjEe63XajeYYURdw" name="proceso de pago">
+  <process:MainProcess xmi:id="_q5DO0FcjEe63XajeYYURdw" name="Diagrama del proceso pago" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_q5DO0VcjEe63XajeYYURdw" name="Pago">
       <elements xmi:type="process:Lane" xmi:id="_q5DO0lcjEe63XajeYYURdw" name="Empleado (lane) " actor="_q5DO61cjEe63XajeYYURdw">
         <elements xmi:type="process:StartEvent" xmi:id="_q5DO01cjEe63XajeYYURdw" name="Inicio" outgoing="_q5DO6FcjEe63XajeYYURdw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_q5DO1FcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
@@ -30,7 +30,7 @@
         </elements>
       </elements>
       <formMapping xmi:type="process:FormMapping" xmi:id="_q5DO5FcjEe63XajeYYURdw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_jlrSYFckEe63XajeYYURdw" name="PagoForm" content="05b9458c-9e05-490d-8c3c-107d8e03d804" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+        <targetForm xmi:type="expression:Expression" xmi:id="_jlrSYFckEe63XajeYYURdw" name="pagoForm" content="05b9458c-9e05-490d-8c3c-107d8e03d804" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_q5DO5lcjEe63XajeYYURdw">
         <targetForm xmi:type="expression:Expression" xmi:id="_q5DO51cjEe63XajeYYURdw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
