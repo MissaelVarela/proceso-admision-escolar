@@ -1,10 +1,10 @@
 {
-  "id" : "newForm",
-  "name" : "newForm",
+  "id" : "PagoForm",
+  "name" : "PagoForm",
   "type" : "form",
-  "uuid" : "026549fe-bf39-4787-ba0c-6dc6be29ddae",
+  "uuid" : "05b9458c-9e05-490d-8c3c-107d8e03d804",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695075112480,
+  "lastUpdate" : 1695252263933,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "7002c156-2e82-46c5-8a40-da75c743574f",
+        "reference" : "3587c5e1-2b79-4709-b414-482f19891875",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,13 +23,13 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "bfc08611-9d53-4fd0-b372-329975aa72c6",
+          "reference" : "abe8da3d-b714-4127-a7aa-331ed466fdcd",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
                   "md" : 12,
                   "sm" : 12,
@@ -37,58 +37,95 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Solicitud Id Input"
-                  },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "number"
-                  },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.solicitudIdInput"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : true
                   }
                 },
-                "reference" : "cc87a01f-180f-4eac-bbdf-9bf9e0b0a0c9",
+                "reference" : "6518cefe-359e-4d4e-a2dc-3c3ab05068f7",
                 "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ingresa tu comprobante de pago"
+                        },
+                        "placeholder" : {
+                          "type" : "constant",
+                          "value" : "Browse to upload a new file..."
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "formInput.pagos"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "url" : {
+                          "type" : "constant",
+                          "value" : "../API/formFileUpload"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "errorContent" : {
+                          "type" : "variable"
+                        }
+                      },
+                      "reference" : "9df7c052-470c-4805-bba5-9f948488dd58",
+                      "hasValidationError" : false,
+                      "id" : "pbUpload",
+                      "description" : ""
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -164,9 +201,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "d5c14296-4856-4a50-b0f1-0d9943bd0622",
+                "reference" : "6369ad76-8ace-499c-9bb8-85f76227f1f6",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -216,9 +274,17 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   }
                 },
-                "reference" : "151bade7-ddb7-4c9b-b608-fac448fcfac6",
+                "reference" : "c2c726d6-5be7-4eaa-abaa-72ba3751a46c",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -234,7 +300,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"solicitudIdInput\" : 0\r",
+        "  \"pagos\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -258,7 +324,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tsolicitudIdInput: $data.formInput.solicitudIdInput",
+        "\tpagos: $data.formInput.pagos",
         "}"
       ],
       "exposed" : false
@@ -266,16 +332,16 @@
   },
   "assets" : [
     {
-      "id" : "89001dc4-7793-4b3b-b12f-bb54cb53186c",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "211a0ef4-7653-4f0f-8707-ef20d1e183cd",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "ef70fdab-39e6-4e93-8ff0-acf04281d0e3",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "814bb015-12ee-4adb-9c4b-86b4cfca003d",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
