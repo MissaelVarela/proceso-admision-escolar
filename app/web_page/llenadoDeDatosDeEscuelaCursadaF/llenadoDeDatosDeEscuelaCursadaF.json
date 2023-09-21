@@ -1,10 +1,10 @@
 {
-  "id" : "llenadoDeDatosPersonalesForm",
-  "name" : "llenadoDeDatosPersonalesForm",
+  "id" : "llenadoDeDatosDeEscuelaCursadaF",
+  "name" : "llenadoDeDatosDeEscuelaCursadaF",
   "type" : "form",
-  "uuid" : "fae9c9b7-1cb8-4d60-8d41-4af7cf11f78f",
+  "uuid" : "95b8b01a-0f35-489f-95d7-943a36f9b00d",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695333175513,
+  "lastUpdate" : 1695333260148,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "89260ad3-4c8b-4056-a945-4c0451857602",
+        "reference" : "59e5dd6a-deda-4883-a759-026944bf6bfb",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -57,9 +57,57 @@
                   "value" : false
                 }
               },
-              "reference" : "120e8724-b5c4-458e-95c0-6259ccf00219",
+              "reference" : "6f87cf49-e9b4-4231-a68b-194decd10c66",
               "hasValidationError" : false,
               "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "6778a4b8-3910-407f-8005-abba88a6db7b",
+              "hasValidationError" : false,
+              "id" : "pbText",
               "description" : ""
             }
           ]
@@ -82,7 +130,7 @@
             "value" : false
           }
         },
-        "reference" : "1ea243ef-2c42-48df-a94a-35c4cceee8b6",
+        "reference" : "8baaeed7-edc4-4008-8a91-59726947ee1f",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -91,7 +139,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "13bd5e22-15b4-443b-b1eb-04c5e9b6cf14",
+          "reference" : "be7f7dc3-0817-4844-bb63-6173ab4af8fd",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -134,7 +182,7 @@
                     "value" : false
                   }
                 },
-                "reference" : "4748c1e1-03f2-447b-a7f2-034dac86db4c",
+                "reference" : "4251eb9c-7abf-4dec-bea6-c06eca70a522",
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
@@ -166,7 +214,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c05ebbb3-8c8d-49fe-ad87-235ecd7b56aa",
+                "reference" : "a5fc0d31-4a7e-44ec-a62d-82fce03184ee",
                 "hasValidationError" : false,
                 "id" : "pbContainer",
                 "rows" : [
@@ -206,7 +254,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Correo"
+                          "value" : "Escuela"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -221,40 +269,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.correo"
+                          "value" : "solicitud_informacion_datos_escuela_cursada.escuela"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "9f717569-1fe9-4073-bc91-ad2339d5b7e2",
+                      "reference" : "4d10a756-4620-4e2d-9e31-0589fe3d0bfc",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -296,7 +318,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Teléfono"
+                          "value" : "Pais"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -311,372 +333,14 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.telefono"
+                          "value" : "solicitud_informacion_datos_escuela_cursada.pais"
                         },
                         "required" : {
                           "type" : "constant",
                           "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
                         }
                       },
-                      "reference" : "b02d33d9-11e9-481e-8a34-9f3f26c615f6",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "disabled" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Sexo"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "inline" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "availableValues" : {
-                          "type" : "constant",
-                          "value" : [
-                            "hombre",
-                            "mujer"
-                          ]
-                        },
-                        "displayedKey" : {
-                          "type" : "constant"
-                        },
-                        "returnedKey" : {
-                          "type" : "constant"
-                        },
-                        "selectedValue" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "a532c33f-0f85-4304-a8de-217f30f9ba44",
-                      "hasValidationError" : false,
-                      "id" : "pbRadioButtons"
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Nacionalidad"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.nacionalidad"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "a938f85d-f03b-4948-a86d-ea552f9f3bcf",
-                      "hasValidationError" : false,
-                      "id" : "pbInput",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "dateFormat" : {
-                          "type" : "constant",
-                          "value" : "MM/dd/yyyy"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fecha de nacimiento"
-                        },
-                        "type" : {
-                          "type" : "constant"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "todayLabel" : {
-                          "type" : "constant",
-                          "value" : "Today"
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "showToday" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Enter a date (mm/dd/yyyy)"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.fecha_nacimiento"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "8dd7c6e3-1e89-4295-b7ee-74dc743df6ba",
-                      "hasValidationError" : false,
-                      "id" : "pbDatePicker",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 1
-                        },
-                        "readOnly" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Fotografia"
-                        },
-                        "placeholder" : {
-                          "type" : "constant"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "text"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.fotografia_url"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "minLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "maxLength" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "debounce" : {
-                          "type" : "constant",
-                          "value" : 0
-                        },
-                        "min" : {
-                          "type" : "constant"
-                        },
-                        "max" : {
-                          "type" : "constant"
-                        },
-                        "step" : {
-                          "type" : "constant",
-                          "value" : 1
-                        }
-                      },
-                      "reference" : "cc57c2c7-cf1a-4706-883a-a3052914a6ca",
+                      "reference" : "23d81abf-d53e-47ca-9996-a52813597f79",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -718,7 +382,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Curp"
+                          "value" : "Estado"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -733,7 +397,71 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "solicitud_informacion_datos_personales.curp"
+                          "value" : "solicitud_informacion_datos_escuela_cursada.estado"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        }
+                      },
+                      "reference" : "de2b6d41-967b-4dc4-b295-b90b0bc8a245",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Ciudad"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "text"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "solicitud_informacion_datos_escuela_cursada.ciudad"
                         },
                         "required" : {
                           "type" : "constant",
@@ -766,7 +494,97 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "f655fe3b-42b4-4ca8-852b-eb679f05090f",
+                      "reference" : "fc9e1c26-b954-4893-b867-23f371436b73",
+                      "hasValidationError" : false,
+                      "id" : "pbInput",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 1
+                        },
+                        "readOnly" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Promedio_general"
+                        },
+                        "placeholder" : {
+                          "type" : "constant"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "number"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "solicitud_informacion_datos_escuela_cursada.promedio_general"
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
+                        }
+                      },
+                      "reference" : "c34f5535-2b78-486b-a76f-d3096ff232b4",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -871,7 +689,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "6b52cb04-02d5-40e5-84c2-f794e016818f",
+                "reference" : "2b39799e-74cb-4bc7-9872-7966b012fa89",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -923,7 +741,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "c7d8a158-f4f9-43e9-91f4-19040781f78e",
+                "reference" : "956e0f89-3295-461d-a52c-fbb562c2cda2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -953,6 +771,13 @@
       "type" : "url",
       "value" : [
         "{{solicitud_informacion|lazyRef:'datos_escuela_cursada'}}"
+      ],
+      "exposed" : false
+    },
+    "solicitud_informacion_datos_familiares" : {
+      "type" : "url",
+      "value" : [
+        "{{solicitud_informacion|lazyRef:'datos_familiares'}}"
       ],
       "exposed" : false
     },
@@ -988,26 +813,24 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.solicitud && $data.solicitud_filtros && $data.solicitud_informacion && $data.solicitud_informacion_datos_solicitud && $data.solicitud_informacion_datos_personales && $data.solicitud_informacion_datos_escuela_cursada ){",
+        "if( $data.solicitud && $data.solicitud_filtros && $data.solicitud_informacion && $data.solicitud_informacion_datos_solicitud && $data.solicitud_informacion_datos_personales && $data.solicitud_informacion_datos_escuela_cursada && $data.solicitud_informacion_datos_familiares ){",
         "\t//attach lazy references variables to parent variables",
         "\t$data.solicitud.filtros = $data.solicitud_filtros;",
         "\t$data.solicitud.informacion = $data.solicitud_informacion;",
         "\t$data.solicitud.informacion.datos_solicitud = $data.solicitud_informacion_datos_solicitud;",
         "\t$data.solicitud.informacion.datos_personales = $data.solicitud_informacion_datos_personales;",
         "\t$data.solicitud.informacion.datos_escuela_cursada = $data.solicitud_informacion_datos_escuela_cursada;",
+        "\t$data.solicitud.informacion.datos_familiares = $data.solicitud_informacion_datos_familiares;",
         "\treturn {",
         "\t\t//map solicitud variable to expected task contract input",
         "\t\tsolicitudInput: {",
         "\t\t\tinformacion: $data.solicitud.informacion ? {",
-        "\t\t\t\tdatos_personales: $data.solicitud.informacion.datos_personales ? {",
-        "\t\t\t\t\tcorreo: $data.solicitud.informacion.datos_personales.correo !== undefined ? $data.solicitud.informacion.datos_personales.correo : null,",
-        "\t\t\t\t\ttelefono: $data.solicitud.informacion.datos_personales.telefono !== undefined ? $data.solicitud.informacion.datos_personales.telefono : null,",
-        "\t\t\t\t\tsexo: $data.solicitud.informacion.datos_personales.sexo !== undefined ? $data.solicitud.informacion.datos_personales.sexo : null,",
-        "\t\t\t\t\treligion: $data.solicitud.informacion.datos_personales.religion !== undefined ? $data.solicitud.informacion.datos_personales.religion : null,",
-        "\t\t\t\t\tnacionalidad: $data.solicitud.informacion.datos_personales.nacionalidad !== undefined ? $data.solicitud.informacion.datos_personales.nacionalidad : null,",
-        "\t\t\t\t\tfecha_nacimiento: $data.solicitud.informacion.datos_personales.fecha_nacimiento !== undefined ? $data.solicitud.informacion.datos_personales.fecha_nacimiento : null,",
-        "\t\t\t\t\tfotografia_url: $data.solicitud.informacion.datos_personales.fotografia_url !== undefined ? $data.solicitud.informacion.datos_personales.fotografia_url : null,",
-        "\t\t\t\t\tcurp: $data.solicitud.informacion.datos_personales.curp !== undefined ? $data.solicitud.informacion.datos_personales.curp : null",
+        "\t\t\t\tdatos_escuela_cursada: $data.solicitud.informacion.datos_escuela_cursada ? {",
+        "\t\t\t\t\tescuela: $data.solicitud.informacion.datos_escuela_cursada.escuela !== undefined ? $data.solicitud.informacion.datos_escuela_cursada.escuela : null,",
+        "\t\t\t\t\tpais: $data.solicitud.informacion.datos_escuela_cursada.pais !== undefined ? $data.solicitud.informacion.datos_escuela_cursada.pais : null,",
+        "\t\t\t\t\testado: $data.solicitud.informacion.datos_escuela_cursada.estado !== undefined ? $data.solicitud.informacion.datos_escuela_cursada.estado : null,",
+        "\t\t\t\t\tciudad: $data.solicitud.informacion.datos_escuela_cursada.ciudad !== undefined ? $data.solicitud.informacion.datos_escuela_cursada.ciudad : null,",
+        "\t\t\t\t\tpromedio_general: $data.solicitud.informacion.datos_escuela_cursada.promedio_general !== undefined ? $data.solicitud.informacion.datos_escuela_cursada.promedio_general : null",
         "\t\t\t\t} : null",
         "\t\t\t} : null",
         "\t\t}",
@@ -1047,14 +870,14 @@
   },
   "assets" : [
     {
-      "id" : "e8e35a75-b071-4ffd-8c35-e92d11504acc",
+      "id" : "6a80be97-8282-4615-a20d-7e774df48c66",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "a2a2fe56-8f82-4618-bed7-0ed34037debd",
+      "id" : "6561c127-154e-4ce9-8dd8-af6ab1a06334",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,

@@ -61,7 +61,7 @@
                 <relationField type="COMPOSITION" reference="com.company.model.DatosSolicitud" fetchType="LAZY" name="datos_solicitud" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosPersonales" fetchType="LAZY" name="datos_personales" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosEscuelaCursada" fetchType="LAZY" name="datos_escuela_cursada" nullable="true" collection="false"/>
-                <relationField type="AGGREGATION" reference="com.company.model.DatosFamiliares" fetchType="LAZY" name="datos_familiares" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.DatosFamiliares" fetchType="LAZY" name="datos_familiares" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
