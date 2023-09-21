@@ -13,6 +13,16 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.DatosFamiliares">
+            <fields>
+                <field type="STRING" length="255" name="tutor" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="profesion" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="telefono" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.DatosPersonales">
             <fields>
                 <field type="STRING" length="255" name="correo" nullable="true" collection="false"/>
@@ -51,6 +61,7 @@
                 <relationField type="COMPOSITION" reference="com.company.model.DatosSolicitud" fetchType="LAZY" name="datos_solicitud" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosPersonales" fetchType="LAZY" name="datos_personales" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosEscuelaCursada" fetchType="LAZY" name="datos_escuela_cursada" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.DatosFamiliares" fetchType="LAZY" name="datos_familiares" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
