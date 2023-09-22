@@ -94,7 +94,7 @@
           <expectedDuration xmi:type="expression:Expression" xmi:id="_xblHi1lvEe6h99ZajyxMZg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <elements xmi:type="process:Lane" xmi:id="_FvRrEExHEe6TSNn8I2TD_w" name="Admisiones" actor="_HNIGwFD1Ee62npWVvhJzIQ">
+      <elements xmi:type="process:Lane" xmi:id="_FvRrEExHEe6TSNn8I2TD_w" name="Admisiones" actor="_zQuDkFJxEe6xE7ufd21EKA">
         <elements xmi:type="process:XORGateway" xmi:id="_FvZm4ExHEe6TSNn8I2TD_w" name="Segundo filtro" outgoing="_FwQigExHEe6TSNn8I2TD_w _fDYG8EzTEe6tj58wt8uG5w" incoming="_FwLC8ExHEe6TSNn8I2TD_w">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FvZm4kxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FvZm4UxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>

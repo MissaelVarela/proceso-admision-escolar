@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6c88bbad-6a9f-4a21-a297-faed2bc3c84e",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695414966918,
+  "lastUpdate" : 1695419554995,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -3322,9 +3322,9 @@
       "exposed" : false
     },
     "solicitudId" : {
-      "type" : "url",
+      "type" : "expression",
       "value" : [
-        "{{context.solicitud_ref.storageId}}"
+        "return $data.context.solicitud_ref.storageId;"
       ],
       "exposed" : false
     },
