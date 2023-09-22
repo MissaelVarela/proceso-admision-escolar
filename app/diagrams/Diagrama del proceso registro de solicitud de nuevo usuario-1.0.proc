@@ -31,15 +31,24 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_biHkcVJqEe6IHqFxitJp3Q" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_biHkc1JqEe6IHqFxitJp3Q" name="" content="" returnTypeFixed="true"/>
           <operations xmi:type="expression:Operation" xmi:id="__xXCkFLSEe6Ow4TIpAPJ8w">
-            <leftOperand xmi:type="expression:Expression" xmi:id="__xXCkVLSEe6Ow4TIpAPJ8w" name="esRegistroExitoso" content="esRegistroExitoso" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:Data" xmi:id="_AJ9IwFLTEe6Ow4TIpAPJ8w" name="esRegistroExitoso" dataType="_qrksWFJpEe6IHqFxitJp3Q"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="__xXCkVLSEe6Ow4TIpAPJ8w" name="registroStatus" content="registroStatus" type="TYPE_VARIABLE">
+              <referencedElements xmi:type="process:Data" xmi:id="_bRww8FjQEe63ddufZgkZKg" name="registroStatus" dataType="_qrksXVJpEe6IHqFxitJp3Q"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="__xXCklLSEe6Ow4TIpAPJ8w" name="tryStartProcess()" content="import org.bonitasoft.engine.bpm.process.ProcessDefinitionNotFoundException&#xD;&#xA;&#xD;&#xA;def processAPI = apiAccessor.getProcessAPI()&#xD;&#xA;&#xD;&#xA;// Instanciando el proceso Admision escolar.&#xD;&#xA;try {&#xD;&#xA;&#x9;long userIdInput = newUserId&#xD;&#xA;&#x9;long processId = processAPI.getProcessDefinitionId(&quot;Admisión escolar&quot;, &quot;1.0.0&quot;)&#xD;&#xA;&#x9;Map&lt;String, String> contrato = new HashMap&lt;String, String>();&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Map&lt;String, String> datosSolicitudInput = new HashMap&lt;String, String>();&#xD;&#xA;&#x9;datosSolicitudInput.licenciaturaId = datosSolicitud.licenciaturaId&#xD;&#xA;&#x9;datosSolicitudInput.periodoDeIngresoId = datosSolicitud.periodoDeIngresoId&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;contrato.datosSolicitudInput = datosSolicitudInput&#xD;&#xA;&#x9;contrato.userIdInput = userIdInput&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;apiAccessor.getProcessAPI().startProcess(newUserId, processId, contrato)&#xD;&#xA;&#x9;return true&#xD;&#xA;}&#xD;&#xA;catch (ProcessDefinitionNotFoundException e) {&#xD;&#xA;&#x9;&#xD;&#xA;}&#xD;&#xA;catch (Exception e) {&#xD;&#xA;&#x9;&#xD;&#xA;}&#xD;&#xA;finally {&#xD;&#xA;&#x9;return false&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_aWTIUFhOEe69PfVE1u3BYw" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_aWTIUVhOEe69PfVE1u3BYw" name="newUserId" dataType="_qrksW1JpEe6IHqFxitJp3Q"/>
-              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_aWTIUlhOEe69PfVE1u3BYw" name="datosSolicitud" dataType="_qrksXlJpEe6IHqFxitJp3Q" className="java.util.Map"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="__xXCklLSEe6Ow4TIpAPJ8w" name="tryStartProcess()" content="import org.bonitasoft.engine.bpm.process.ProcessDefinitionNotFoundException&#xD;&#xA;&#xD;&#xA;def processAPI = apiAccessor.getProcessAPI()&#xD;&#xA;&#xD;&#xA;// Instanciando el proceso Admision escolar.&#xD;&#xA;try {&#xD;&#xA;&#x9;long userIdInput = newUserId&#xD;&#xA;&#x9;long processId = processAPI.getLatestProcessDefinitionId(&quot;Admisión escolar&quot;)&#xD;&#xA;&#x9;Map&lt;String, Serializable> contrato = new HashMap&lt;String, Serializable>();&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Map&lt;String, Serializable> datosSolicitudInput = new HashMap&lt;String, Serializable>();&#xD;&#xA;&#x9;datosSolicitudInput.licenciaturaId = datosSolicitud.licenciaturaId&#xD;&#xA;&#x9;datosSolicitudInput.periodoDeIngresoId = datosSolicitud.periodoDeIngresoId&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;contrato.datosSolicitudInput = datosSolicitudInput&#xD;&#xA;&#x9;contrato.userIdInput = userIdInput&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;apiAccessor.getProcessAPI().startProcessWithInputs(newUserId, processId, contrato)&#xD;&#xA;&#x9;return &quot;Correcto&quot;&#xD;&#xA;}&#xD;&#xA;catch (ProcessDefinitionNotFoundException e) {&#xD;&#xA;&#x9;return &quot;Error (ProcesoNoEncontrado)&quot;&#xD;&#xA;}&#xD;&#xA;catch (Exception e) {&#xD;&#xA;&#x9;return &quot;Error (otro): &quot; + e.getMessage()&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:Data" xmi:id="_Z-WZkFjWEe63ddufZgkZKg" name="newUserId" dataType="_qrksW1JpEe6IHqFxitJp3Q"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_Z-WZkVjWEe63ddufZgkZKg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_Z-WZkljWEe63ddufZgkZKg" name="datosSolicitud" dataType="_qrksXlJpEe6IHqFxitJp3Q" className="java.util.Map"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="__xXCk1LSEe6Ow4TIpAPJ8w" type="ASSIGNMENT"/>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_wFnaYFjQEe63ddufZgkZKg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_wFnaYVjQEe63ddufZgkZKg" name="esRegistroExitoso" content="esRegistroExitoso" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:Data" xmi:id="_wpVLcFjQEe63ddufZgkZKg" name="esRegistroExitoso" dataType="_qrksWFJpEe6IHqFxitJp3Q"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_wFnaYljQEe63ddufZgkZKg" name="registroStatus == &quot;Correcto&quot;" content="registroStatus == &quot;Correcto&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:Data" xmi:id="_0BGYgFjQEe63ddufZgkZKg" name="registroStatus" dataType="_qrksXVJpEe6IHqFxitJp3Q"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_wFnaY1jQEe63ddufZgkZKg" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_biHkdFJqEe6IHqFxitJp3Q" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_biHkdVJqEe6IHqFxitJp3Q" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -114,6 +123,12 @@
       <data xmi:type="process:Data" xmi:id="_73IUEFZ0Ee6sqeoP3dMRrg" name="newUserId" dataType="_qrksW1JpEe6IHqFxitJp3Q">
         <defaultValue xmi:type="expression:Expression" xmi:id="_73IUEVZ0Ee6sqeoP3dMRrg" name="null" content="null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long"/>
       </data>
+      <data xmi:type="process:Data" xmi:id="_wQzwAFjLEe63ddufZgkZKg" name="errorMessage" dataType="_qrksXVJpEe6IHqFxitJp3Q">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_wQzwAVjLEe63ddufZgkZKg" name="init_errorMessage()" content="''" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      </data>
+      <data xmi:type="process:Data" xmi:id="_ZNZFcFjQEe63ddufZgkZKg" name="registroStatus" dataType="_qrksXVJpEe6IHqFxitJp3Q">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_ZNZFcVjQEe63ddufZgkZKg" name="init_registroStatus()" content="'No definido'" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_qrkFVFJpEe6IHqFxitJp3Q">
         <targetForm xmi:type="expression:Expression" xmi:id="_G4R3YFLSEe6Ow4TIpAPJ8w" name="inicioRegistroForm" content="3f6200a2-c8c9-48aa-8452-ecc62ef000b0" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -146,10 +161,10 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_JrhRAFZ1Ee6sqeoP3dMRrg" name="Sí" target="_Xkl3kFJtEe6IHqFxitJp3Q" source="_Fv6XEFZ1Ee6sqeoP3dMRrg">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_JrhRAVZ1Ee6sqeoP3dMRrg"/>
-        <condition xmi:type="expression:Expression" xmi:id="_JrhRAlZ1Ee6sqeoP3dMRrg" name="Revisar existencia de usuario" content="boolean primeraRevision = esCuentaConfirmada &amp;&amp; (newUserId != null) &amp;&amp; (newUserId != -1)&#xD;&#xA;&#xD;&#xA;boolean segundaRevision = false&#xD;&#xA;try {&#xD;&#xA;&#x9;def user = apiAccessor.identityAPI.getUser(newUserId)&#xD;&#xA;&#x9;segundaRevision = true&#xD;&#xA;}&#xD;&#xA;catch(Exception e) {}&#xD;&#xA;&#xD;&#xA;return primeraRevision &amp;&amp; segundaRevision" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_rGR7IFZ2Ee6sqeoP3dMRrg" name="esCuentaConfirmada" dataType="_qrksWFJpEe6IHqFxitJp3Q"/>
-          <referencedElements xmi:type="process:Data" xmi:id="_rGR7IVZ2Ee6sqeoP3dMRrg" name="newUserId" dataType="_qrksW1JpEe6IHqFxitJp3Q"/>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_rGR7IlZ2Ee6sqeoP3dMRrg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+        <condition xmi:type="expression:Expression" xmi:id="_JrhRAlZ1Ee6sqeoP3dMRrg" name="Revisar existencia de usuario" content="boolean primeraRevision = false&#xD;&#xA;boolean segundaRevision = false&#xD;&#xA;&#xD;&#xA;try {&#xD;&#xA;&#x9;primeraRevision = esCuentaConfirmada &amp;&amp; (newUserId != null) &amp;&amp; (newUserId != -1)&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;def user = apiAccessor.identityAPI.getUser(newUserId)&#xD;&#xA;&#x9;segundaRevision = true&#xD;&#xA;}&#xD;&#xA;catch(Exception e) {}&#xD;&#xA;&#xD;&#xA;return primeraRevision &amp;&amp; segundaRevision" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_4Pd2YFjQEe63ddufZgkZKg" name="newUserId" dataType="_qrksW1JpEe6IHqFxitJp3Q"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_4Pd2YVjQEe63ddufZgkZKg" name="apiAccessor" content="apiAccessor" type="TYPE_ENGINE_CONSTANT" returnType="org.bonitasoft.engine.api.APIAccessor"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_4Pd2YljQEe63ddufZgkZKg" name="esCuentaConfirmada" dataType="_qrksWFJpEe6IHqFxitJp3Q"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_KkW9gFZ1Ee6sqeoP3dMRrg" name="No" target="_I0hyAFJsEe6IHqFxitJp3Q" source="_Fv6XEFZ1Ee6sqeoP3dMRrg" isDefault="true">
@@ -223,7 +238,7 @@
         <correlation xmi:type="expression:TableExpression" xmi:id="_OhLX4FLREe6Ow4TIpAPJ8w">
           <expressions xmi:type="expression:ListExpression" xmi:id="_OyyFQFLREe6Ow4TIpAPJ8w">
             <expressions xmi:type="expression:Expression" xmi:id="_OyyFQVLREe6Ow4TIpAPJ8w" name="confirmacionId" content="confirmacionId"/>
-            <expressions xmi:type="expression:Expression" xmi:id="_QbnEQFLREe6Ow4TIpAPJ8w" name="return confirmacionId" content="//return confirmacionId&#xD;&#xA;return 77" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+            <expressions xmi:type="expression:Expression" xmi:id="_QbnEQFLREe6Ow4TIpAPJ8w" name="return confirmacionId" content="//return confirmacionId&#xD;&#xA;return 99" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
           </expressions>
         </correlation>
       </elements>
