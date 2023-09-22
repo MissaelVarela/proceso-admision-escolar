@@ -23,6 +23,14 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.DatosPago">
+            <fields>
+                <field type="STRING" length="255" name="url" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.DatosPersonales">
             <fields>
                 <field type="STRING" length="255" name="correo" nullable="true" collection="false"/>
@@ -62,6 +70,7 @@
                 <relationField type="COMPOSITION" reference="com.company.model.DatosPersonales" fetchType="LAZY" name="datos_personales" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosEscuelaCursada" fetchType="LAZY" name="datos_escuela_cursada" nullable="true" collection="false"/>
                 <relationField type="COMPOSITION" reference="com.company.model.DatosFamiliares" fetchType="LAZY" name="datos_familiares" nullable="true" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.DatosPago" fetchType="LAZY" name="datos_pago" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
