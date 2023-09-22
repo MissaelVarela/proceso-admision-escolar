@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "74d56728-072c-44a0-9e1c-cf9e0f054ecb",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695417005035,
+  "lastUpdate" : 1695418574580,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -2621,7 +2621,19 @@
                                               "dimension" : {
                                                 "xs" : 12
                                               },
-                                              "propertyValues" : { },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable"
+                                                }
+                                              },
                                               "reference" : "552e57ae-2ad7-4125-a3c5-69a9b6255b99",
                                               "hasValidationError" : false,
                                               "id" : "pbContainer",
@@ -2984,6 +2996,217 @@
                                                 ]
                                               ]
                                             }
+                                          ],
+                                          [
+                                            {
+                                              "type" : "container",
+                                              "dimension" : {
+                                                "xs" : 12,
+                                                "sm" : 12,
+                                                "md" : 12,
+                                                "lg" : 12
+                                              },
+                                              "propertyValues" : {
+                                                "cssClasses" : {
+                                                  "type" : "constant",
+                                                  "value" : ""
+                                                },
+                                                "hidden" : {
+                                                  "type" : "constant",
+                                                  "value" : false
+                                                },
+                                                "repeatedCollection" : {
+                                                  "type" : "variable"
+                                                }
+                                              },
+                                              "reference" : "4a1bd41b-9ad1-44e3-8d7a-062204657416",
+                                              "hasValidationError" : false,
+                                              "id" : "pbContainer",
+                                              "rows" : [
+                                                [
+                                                  {
+                                                    "type" : "component",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 12,
+                                                      "lg" : 12
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "allowHTML" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "text" : {
+                                                        "type" : "interpolation",
+                                                        "value" : "Datos de pago"
+                                                      },
+                                                      "level" : {
+                                                        "type" : "constant",
+                                                        "value" : "Level 4"
+                                                      },
+                                                      "alignment" : {
+                                                        "type" : "constant",
+                                                        "value" : "left"
+                                                      }
+                                                    },
+                                                    "reference" : "a4bc3242-50a8-4a6d-967e-7f75af8d8b2c",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbTitle"
+                                                  }
+                                                ],
+                                                [
+                                                  {
+                                                    "type" : "container",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 1,
+                                                      "lg" : 6
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "repeatedCollection" : {
+                                                        "type" : "variable"
+                                                      }
+                                                    },
+                                                    "reference" : "07f28177-63c8-4b54-a062-5beec94948a6",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbContainer",
+                                                    "rows" : [
+                                                      [ ]
+                                                    ]
+                                                  },
+                                                  {
+                                                    "type" : "container",
+                                                    "dimension" : {
+                                                      "xs" : 12,
+                                                      "sm" : 12,
+                                                      "md" : 11,
+                                                      "lg" : 6
+                                                    },
+                                                    "propertyValues" : {
+                                                      "cssClasses" : {
+                                                        "type" : "constant",
+                                                        "value" : ""
+                                                      },
+                                                      "hidden" : {
+                                                        "type" : "constant",
+                                                        "value" : false
+                                                      },
+                                                      "repeatedCollection" : {
+                                                        "type" : "variable"
+                                                      }
+                                                    },
+                                                    "reference" : "d1bcbddb-2a13-4efd-ab62-c9526da9512c",
+                                                    "hasValidationError" : false,
+                                                    "id" : "pbContainer",
+                                                    "rows" : [
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "required" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "allowHTML" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "minLength" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "maxLength" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "readOnly" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            },
+                                                            "labelHidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "label" : {
+                                                              "type" : "interpolation",
+                                                              "value" : "Nombre del archivo"
+                                                            },
+                                                            "labelPosition" : {
+                                                              "type" : "constant",
+                                                              "value" : "top"
+                                                            },
+                                                            "labelWidth" : {
+                                                              "type" : "constant",
+                                                              "value" : 4
+                                                            },
+                                                            "placeholder" : {
+                                                              "type" : "interpolation"
+                                                            },
+                                                            "value" : {
+                                                              "type" : "variable",
+                                                              "value" : "solicitud_informacion_datos_pago.file_name"
+                                                            },
+                                                            "debounce" : {
+                                                              "type" : "constant",
+                                                              "value" : 0
+                                                            },
+                                                            "type" : {
+                                                              "type" : "constant",
+                                                              "value" : "text"
+                                                            },
+                                                            "min" : {
+                                                              "type" : "constant"
+                                                            },
+                                                            "max" : {
+                                                              "type" : "constant"
+                                                            },
+                                                            "step" : {
+                                                              "type" : "constant",
+                                                              "value" : 1
+                                                            }
+                                                          },
+                                                          "reference" : "abd7ac1d-5d74-47c8-a527-412fec6a4bb3",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbInput"
+                                                        }
+                                                      ]
+                                                    ]
+                                                  }
+                                                ]
+                                              ]
+                                            }
                                           ]
                                         ]
                                       }
@@ -3329,6 +3552,13 @@
       "value" : [
         "var value = $data.solicitud_informacion_datos_personales.sexo",
         "return value ? \"Hombre\" : \"Mujer\";"
+      ],
+      "exposed" : false
+    },
+    "solicitud_informacion_datos_pago" : {
+      "type" : "url",
+      "value" : [
+        "{{solicitud_informacion|lazyRef:'datos_pago'}}"
       ],
       "exposed" : false
     }
