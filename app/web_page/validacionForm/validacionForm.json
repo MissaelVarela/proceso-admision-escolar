@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6c88bbad-6a9f-4a21-a297-faed2bc3c84e",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695411126780,
+  "lastUpdate" : 1695414966918,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -74,58 +74,6 @@
                 "reference" : "a174648f-25cf-4522-8080-df963185b691",
                 "hasValidationError" : false,
                 "id" : "pbTitle"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "<pre> {{ solicitud | json }}</pre>"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "469f7810-d954-46eb-9b00-e3bd3cf21432",
-                "hasValidationError" : false,
-                "id" : "pbText"
               }
             ],
             [
@@ -695,7 +643,19 @@
                                                           "dimension" : {
                                                             "xs" : 12
                                                           },
-                                                          "propertyValues" : { },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "repeatedCollection" : {
+                                                              "type" : "variable"
+                                                            }
+                                                          },
                                                           "reference" : "d243e27a-102c-406c-bb70-c797b674097c",
                                                           "hasValidationError" : false,
                                                           "id" : "pbContainer",
@@ -734,6 +694,10 @@
                                                                   "dimension" : {
                                                                     "type" : "constant",
                                                                     "value" : 12
+                                                                  },
+                                                                  "allowHTML" : {
+                                                                    "type" : "constant",
+                                                                    "value" : false
                                                                   }
                                                                 },
                                                                 "reference" : "e93980f2-a8c5-464e-83b9-ebbe997285f3",
@@ -3218,7 +3182,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Aceptar solicitud"
+                    "value" : "Validar solicitud"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -3367,7 +3331,7 @@
     "solicitud" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"findByPersistenceId [com.company.model.Solicitud]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findByPersistenceId\",\"displayName\":\"findByPersistenceId\"},\"id\":\"com.company.model.Solicitud\",\"filters\":[{\"name\":\"persistenceId\",\"type\":\"INTEGER\",\"collection\":false,\"value\":\"172\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"findByPersistenceId [com.company.model.Solicitud]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"findByPersistenceId\",\"displayName\":\"findByPersistenceId\"},\"id\":\"com.company.model.Solicitud\",\"filters\":[{\"name\":\"persistenceId\",\"type\":\"INTEGER\",\"collection\":false,\"value\":\"{{solicitudId}}\"}],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
       ],
       "exposed" : false
     },

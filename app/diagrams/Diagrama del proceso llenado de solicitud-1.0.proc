@@ -145,11 +145,11 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_orbYoFNdEe6HSdqMuLpmQA" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_orbYoVNdEe6HSdqMuLpmQA" name="init_solicitud()" content="solicitudDAO.findByPersistenceId(solicitudIdInput)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_orbYolNdEe6HSdqMuLpmQA" name="solicitudDAO" content="solicitudDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.SolicitudDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_orbYo1NdEe6HSdqMuLpmQA" name="solicitudIdInput" type="LONG">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_orbYpFNdEe6HSdqMuLpmQA"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_orbYoVNdEe6HSdqMuLpmQA" name="init_solicitud()" content="return solicitudDAO.findByPersistenceId(solicitudIdInput)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_VID4cFl4Ee6h99ZajyxMZg" name="solicitudIdInput" type="LONG">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_VID4cVl4Ee6h99ZajyxMZg"/>
           </referencedElements>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_VID4cll4Ee6h99ZajyxMZg" name="solicitudDAO" content="solicitudDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.SolicitudDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_JG8eQ1NdEe6HSdqMuLpmQA" type="NONE">
