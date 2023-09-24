@@ -79,8 +79,8 @@
     <group name="admisiones" parentPath="/escuela">
       <displayName>Admisiones</displayName>
     </group>
-    <group name="revisión" parentPath="/escuela">
-      <displayName>Revisión</displayName>
+    <group name="validaciones" parentPath="/escuela">
+      <displayName>Validaciones</displayName>
     </group>
     <group name="aspirantes">
       <displayName>Aspirantes</displayName>
@@ -107,7 +107,7 @@
     <membership>
       <userName>walter.bates</userName>
       <roleName>empleado</roleName>
-      <groupName>revisión</groupName>
+      <groupName>validaciones</groupName>
       <groupParentPath>/escuela</groupParentPath>
     </membership>
     <membership>

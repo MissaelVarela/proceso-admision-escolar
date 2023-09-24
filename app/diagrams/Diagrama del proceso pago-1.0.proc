@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
-  <process:MainProcess xmi:id="_q5DO0FcjEe63XajeYYURdw" name="Diagrama del proceso de pago" bonitaModelVersion="7.12.0-004">
-    <elements xmi:type="process:Pool" xmi:id="_q5DO0VcjEe63XajeYYURdw" name="proceso de pago">
-      <elements xmi:type="process:Lane" xmi:id="_q5DO0lcjEe63XajeYYURdw" name="Empleado (lane) " actor="_q5DO61cjEe63XajeYYURdw">
+  <process:MainProcess xmi:id="_q5DO0FcjEe63XajeYYURdw" name="Diagrama del proceso pago" bonitaModelVersion="7.12.0-004">
+    <elements xmi:type="process:Pool" xmi:id="_q5DO0VcjEe63XajeYYURdw" name="Pago">
+      <elements xmi:type="process:Lane" xmi:id="_q5DO0lcjEe63XajeYYURdw" name="Aspirante" actor="_q5DO61cjEe63XajeYYURdw">
         <elements xmi:type="process:StartEvent" xmi:id="_q5DO01cjEe63XajeYYURdw" name="Inicio" outgoing="_q5DO6FcjEe63XajeYYURdw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_q5DO1FcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_q5DO1VcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
@@ -13,24 +13,50 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_6YD6gVcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_6YD6g1cjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_a8vGoFckEe63XajeYYURdw" name="enviar recibo" outgoing="_6YHk4FcjEe63XajeYYURdw" incoming="_q5DO6FcjEe63XajeYYURdw" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_a8vGoFckEe63XajeYYURdw" name="Llenado de datos pago" outgoing="_6YHk4FcjEe63XajeYYURdw" incoming="_q5DO6FcjEe63XajeYYURdw" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_q5DO2FcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_q5DO2VcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_q5DO2lcjEe63XajeYYURdw" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_AOA_EFmGEe6h99ZajyxMZg">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_AOA_EVmGEe6h99ZajyxMZg" name="solicitud" content="solicitud" type="TYPE_VARIABLE" returnType="com.company.model.Solicitud">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_Ag8iIFmGEe6h99ZajyxMZg" name="solicitud" dataType="_q5DPBFcjEe63XajeYYURdw" className="com.company.model.Solicitud"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_AOA_ElmGEe6h99ZajyxMZg" name="mapFile()" content="&#xD;&#xA;def informacionVar = solicitud.informacion ?: new com.company.model.Informacion()&#xD;&#xA;informacionVar.datos_pago = {&#xD;&#xA;&#x9;if (!comprobantePagoInput) {&#xD;&#xA;&#x9;&#x9;return null&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;def datosPagoVar = informacionVar.datos_pago ?: new com.company.model.DatosPago()&#xD;&#xA;&#x9;datosPagoVar.file_name = comprobantePagoInput.getFileName()&#xD;&#xA;&#x9;datosPagoVar.file_id = comprobantePagoInput.getId()&#xD;&#xA;&#x9;return datosPagoVar}()&#xD;&#xA;return informacionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Informacion">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tTOeIFmHEe6h99ZajyxMZg" name="solicitud" dataType="_q5DPBFcjEe63XajeYYURdw" className="com.company.model.Solicitud"/>
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_tTOeIVmHEe6h99ZajyxMZg" name="comprobantePagoInput" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_tTOeIlmHEe6h99ZajyxMZg"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_AOA_E1mGEe6h99ZajyxMZg" type="JAVA_METHOD" expression="setInformacion">
+              <inputTypes>com.company.model.Informacion</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_q5DO21cjEe63XajeYYURdw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_q5DO3FcjEe63XajeYYURdw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_q5DO3VcjEe63XajeYYURdw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_q5DO3lcjEe63XajeYYURdw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_q5DO31cjEe63XajeYYURdw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_a8vtt1ckEe63XajeYYURdw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_a8vtuFckEe63XajeYYURdw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_QBmCAFmFEe6h99ZajyxMZg" name="pagoForm" content="f98ee6c3-40ce-471c-a32e-6e86570ec9c1" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_a8vttlckEe63XajeYYURdw"/>
+          <contract xmi:type="process:Contract" xmi:id="_a8vttlckEe63XajeYYURdw">
+            <inputs xmi:type="process:ContractInput" xmi:id="_KiswYFmFEe6h99ZajyxMZg" name="comprobantePagoInput" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_KiswYVmFEe6h99ZajyxMZg"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_a8vtuVckEe63XajeYYURdw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_q5DO5FcjEe63XajeYYURdw">
-        <targetForm xmi:type="expression:Expression" xmi:id="_jlrSYFckEe63XajeYYURdw" name="PagoForm" content="05b9458c-9e05-490d-8c3c-107d8e03d804" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_7pWhEFmFEe6h99ZajyxMZg" name="solicitud" dataType="_q5DPBFcjEe63XajeYYURdw" className="com.company.model.Solicitud">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_7pWhEVmFEe6h99ZajyxMZg" name="init_solicitud()" content="solicitudDAO.findByPersistenceId(solicitudIdInput)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">
+          <referencedElements xmi:type="expression:Expression" xmi:id="__U0tQFmFEe6h99ZajyxMZg" name="solicitudDAO" content="solicitudDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.SolicitudDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="__U0tQVmFEe6h99ZajyxMZg" name="solicitudIdInput" type="LONG">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="__U0tQlmFEe6h99ZajyxMZg"/>
+          </referencedElements>
+        </defaultValue>
+      </data>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_q5DO5FcjEe63XajeYYURdw" type="NONE">
+        <targetForm xmi:type="expression:Expression" xmi:id="_jlrSYFckEe63XajeYYURdw" name="pagoForm" content="05b9458c-9e05-490d-8c3c-107d8e03d804" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_q5DO5lcjEe63XajeYYURdw">
         <targetForm xmi:type="expression:Expression" xmi:id="_q5DO51cjEe63XajeYYURdw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -43,10 +69,10 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_6YHk4VcjEe63XajeYYURdw"/>
         <condition xmi:type="expression:Expression" xmi:id="_6YHk4lcjEe63XajeYYURdw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_q5DO61cjEe63XajeYYURdw" documentation="Este es un ejemplo de actor que está mapeado a cualquier usuario de la organización ACME" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_q5DO61cjEe63XajeYYURdw" name="Aspirante" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_q5DO7FcjEe63XajeYYURdw">
-        <inputs xmi:type="process:ContractInput" xmi:id="_f5xBUFckEe63XajeYYURdw" name="pagos" type="FILE">
-          <mapping xmi:type="process:ContractInputMapping" xmi:id="_f5xBUVckEe63XajeYYURdw"/>
+        <inputs xmi:type="process:ContractInput" xmi:id="_2qh2oFmFEe6h99ZajyxMZg" name="solicitudIdInput" type="LONG">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_2qh2oVmFEe6h99ZajyxMZg"/>
         </inputs>
       </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_q5DO7VcjEe63XajeYYURdw">
@@ -97,11 +123,11 @@
               <children xmi:type="notation:DecorationNode" xmi:id="_6YFIolcjEe63XajeYYURdw" type="5025">
                 <layoutConstraint xmi:type="notation:Location" xmi:id="_6YFIo1cjEe63XajeYYURdw" y="5"/>
               </children>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6YFIoVcjEe63XajeYYURdw" x="559" y="107"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6YFIoVcjEe63XajeYYURdw" x="559" y="115"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_a8vtulckEe63XajeYYURdw" type="3005" element="_a8vGoFckEe63XajeYYURdw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
               <children xmi:type="notation:DecorationNode" xmi:id="_a8vtvFckEe63XajeYYURdw" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a8vtu1ckEe63XajeYYURdw" x="302" y="100" width="100" height="50"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_a8vtu1ckEe63XajeYYURdw" x="346" y="100" width="120" height="60"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_q5D17FcjEe63XajeYYURdw"/>

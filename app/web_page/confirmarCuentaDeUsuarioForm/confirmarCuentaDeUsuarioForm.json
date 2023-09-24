@@ -1,10 +1,10 @@
 {
-  "id" : "confirmarCuentaDeU",
-  "name" : "confirmarCuentaDeU",
+  "id" : "confirmarCuentaDeUsuarioForm",
+  "name" : "confirmarCuentaDeUsuarioForm",
   "type" : "form",
   "uuid" : "c9cdf9b9-ceb2-4003-8c1e-d8ff2eeadd25",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694681389364,
+  "lastUpdate" : 1695331527460,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
