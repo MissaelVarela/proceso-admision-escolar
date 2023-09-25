@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_JG73IFNdEe6HSdqMuLpmQA" name="Diagrama del proceso llenado de solicitud" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_JG8eMFNdEe6HSdqMuLpmQA" name="Llenado de solicitud">
       <elements xmi:type="process:Lane" xmi:id="_JG8eMVNdEe6HSdqMuLpmQA" name="Aspirante" actor="_JG8eSlNdEe6HSdqMuLpmQA">
@@ -143,6 +143,15 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_DK4jcVjDEe63ddufZgkZKg" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_CzN6AFvnEe6XZZq0HrNHBg" name="singleUserFilter" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_CzN6AVvnEe6XZZq0HrNHBg" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_CzN6AlvnEe6XZZq0HrNHBg" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_CzN6A1vnEe6XZZq0HrNHBg" name="userId()" content="solicitud.aspirante_id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_CzN6BFvnEe6XZZq0HrNHBg" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
+              </expression>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_orbYoFNdEe6HSdqMuLpmQA" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud">
         <defaultValue xmi:type="expression:Expression" xmi:id="_orbYoVNdEe6HSdqMuLpmQA" name="init_solicitud()" content="return solicitudDAO.findByPersistenceId(solicitudIdInput)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Solicitud">

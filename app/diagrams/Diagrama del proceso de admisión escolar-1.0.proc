@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_FtBoUExHEe6TSNn8I2TD_w" name="Diagrama del proceso de admisión escolar" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_FtcfEExHEe6TSNn8I2TD_w" name="Admisión escolar">
       <elements xmi:type="process:Lane" xmi:id="_FtneMExHEe6TSNn8I2TD_w" name="Aspirante" actor="_HNIGwFD1Ee62npWVvhJzIQ">
@@ -54,6 +54,15 @@
           <calledActivityName xmi:type="expression:Expression" xmi:id="_7djrU1mGEe6h99ZajyxMZg" name="Pago" content="Pago" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_7djrVFmGEe6h99ZajyxMZg" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_jN88cFvmEe6XZZq0HrNHBg" name="sigleUserFilter" definitionId="bonita-actorfilter-single-user" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_jN88cVvmEe6XZZq0HrNHBg" definitionId="bonita-actorfilter-single-user" version="1.0.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_jN88clvmEe6XZZq0HrNHBg" key="userId">
+              <expression xmi:type="expression:Expression" xmi:id="_jN88c1vmEe6XZZq0HrNHBg" name="userId()" content="solicitud.aspirante_id" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long" returnTypeFixed="true">
+                <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jN88dFvmEe6XZZq0HrNHBg" name="solicitud" dataType="_FtC2eExHEe6TSNn8I2TD_w" className="com.company.model.Solicitud"/>
+              </expression>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <elements xmi:type="process:Lane" xmi:id="_FutqYExHEe6TSNn8I2TD_w" name="Validador" actor="_yhhbQFJxEe6xE7ufd21EKA">
         <elements xmi:type="process:XORGateway" xmi:id="_FvMLgExHEe6TSNn8I2TD_w" name="Primer filtro" outgoing="_Fv254ExHEe6TSNn8I2TD_w _FxLIgExHEe6TSNn8I2TD_w _IrSGwEzXEe6tj58wt8uG5w" incoming="_FwzVEExHEe6TSNn8I2TD_w">
