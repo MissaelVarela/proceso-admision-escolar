@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "74d56728-072c-44a0-9e1c-cf9e0f054ecb",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695419783056,
+  "lastUpdate" : 1695686887913,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -3176,7 +3176,7 @@
                                                             },
                                                             "value" : {
                                                               "type" : "variable",
-                                                              "value" : "solicitud_informacion_datos_pago.file_name"
+                                                              "value" : "solicitud_informacion_datos_pago.comprobante_pago_file_name"
                                                             },
                                                             "debounce" : {
                                                               "type" : "constant",
@@ -3200,6 +3200,98 @@
                                                           "reference" : "abd7ac1d-5d74-47c8-a527-412fec6a4bb3",
                                                           "hasValidationError" : false,
                                                           "id" : "pbInput"
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "allowHTML" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            },
+                                                            "labelHidden" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            },
+                                                            "label" : {
+                                                              "type" : "interpolation",
+                                                              "value" : "Default label"
+                                                            },
+                                                            "labelPosition" : {
+                                                              "type" : "constant",
+                                                              "value" : "top"
+                                                            },
+                                                            "labelWidth" : {
+                                                              "type" : "constant",
+                                                              "value" : 4
+                                                            },
+                                                            "text" : {
+                                                              "type" : "interpolation",
+                                                              "value" : "<pre> {{ variablesCase| json }} </pre>\n<pre> {{ solicitud_informacion_datos_pago | json }} </pre>"
+                                                            },
+                                                            "alignment" : {
+                                                              "type" : "constant",
+                                                              "value" : "left"
+                                                            }
+                                                          },
+                                                          "reference" : "2160d67d-8424-4eaf-9a19-d96e8a424d0c",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbText"
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "type" : {
+                                                              "type" : "constant",
+                                                              "value" : "Process document"
+                                                            },
+                                                            "url" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "document" : {
+                                                              "type" : "variable",
+                                                              "value" : "context.comprobantePagoFile_ref"
+                                                            },
+                                                            "showPreview" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            }
+                                                          },
+                                                          "reference" : "cb62d737-e6e1-434a-934c-67dd3429c154",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbFileViewer"
                                                         }
                                                       ]
                                                     ]
@@ -3408,6 +3500,58 @@
           ]
         }
       }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<pre> {{context | json}} </pre>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "3487225d-3984-4cc9-bf10-707613c17561",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
     ]
   ],
   "variables" : {
@@ -3480,7 +3624,7 @@
     "solicitudId" : {
       "type" : "expression",
       "value" : [
-        "return $data.context.solicitud_ref.storageId;"
+        "return 301// $data.context.solicitud_ref.storageId;"
       ],
       "exposed" : false
     },
