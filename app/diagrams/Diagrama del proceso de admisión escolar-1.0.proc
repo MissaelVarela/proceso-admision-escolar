@@ -24,6 +24,18 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FumVoUxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FumVoExHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FumVokxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:JavaObjectData" xmi:id="_hxG_0Fw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_hxG_0Vw6Ee6dqt0fGsP0JA" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
+          </data>
+          <operations xmi:type="expression:Operation" xmi:id="_8FD0wFw6Ee6dqt0fGsP0JA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_8FD0wVw6Ee6dqt0fGsP0JA" name="fotografiaFile" content="fotografiaFile" type="DOCUMENT_REF_TYPE">
+              <referencedElements xmi:type="process:Document" xmi:id="_8roskFw6Ee6dqt0fGsP0JA" name="fotografiaFile"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_8FD0wlw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" content="fotografiaFileInputValue" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_-Xjb0Fw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_8FD0w1w6Ee6dqt0fGsP0JA" type="DOCUMENT_CREATE_UPDATE"/>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_FumVo0xHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_FumVpExHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_FumVpUxHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -34,6 +46,7 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_qWRtMFl5Ee6h99ZajyxMZg" name="solicitud" dataType="_FtC2eExHEe6TSNn8I2TD_w" className="com.company.model.Solicitud"/>
             </processSource>
           </inputMappings>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_3_59QFw6Ee6dqt0fGsP0JA" subprocessSource="fotografiaFileInputValue" processTarget="_hxG_0Fw6Ee6dqt0fGsP0JA"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_hKD8o1l2Ee6h99ZajyxMZg" name="Llenado de solicitud" content="Llenado de solicitud" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_hKD8pFl2Ee6h99ZajyxMZg" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -41,12 +54,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_Fub9kUxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_Fub9kExHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_Fub9kkxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:JavaObjectData" xmi:id="_QH5tcFw6Ee6dqt0fGsP0JA" name="comprobantePagoFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_QH5tcVw6Ee6dqt0fGsP0JA" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
+          </data>
           <operations xmi:type="expression:Operation" xmi:id="_LxFK4Fv9Ee6XZZq0HrNHBg">
             <leftOperand xmi:type="expression:Expression" xmi:id="_LxFK4Vv9Ee6XZZq0HrNHBg" name="comprobantePagoFile" content="comprobantePagoFile" type="DOCUMENT_REF_TYPE">
               <referencedElements xmi:type="process:Document" xmi:id="_MPpWMFv9Ee6XZZq0HrNHBg" name="comprobantePagoFile"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_LxFK4lv9Ee6XZZq0HrNHBg" name="return comprobantePagoFileInputValue" content="return comprobantePagoFileInputValue" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.document.DocumentValue">
-              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_IrB68Fw0Ee6dqt0fGsP0JA" name="comprobantePagoFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_U51ycFw6Ee6dqt0fGsP0JA" name="comprobantePagoFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_LxFK41v9Ee6XZZq0HrNHBg" type="DOCUMENT_CREATE_UPDATE"/>
           </operations>
@@ -60,7 +76,7 @@
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DDs9UFmHEe6h99ZajyxMZg" name="solicitud" dataType="_FtC2eExHEe6TSNn8I2TD_w" className="com.company.model.Solicitud"/>
             </processSource>
           </inputMappings>
-          <outputMappings xmi:type="process:OutputMapping" xmi:id="_duaDkFwzEe6dqt0fGsP0JA" subprocessSource="comprobantePagoFileInputValue" processTarget="_ci9hwFv_Ee6XZZq0HrNHBg"/>
+          <outputMappings xmi:type="process:OutputMapping" xmi:id="_duaDkFwzEe6dqt0fGsP0JA" subprocessSource="comprobantePagoFileInputValue" processTarget="_QH5tcFw6Ee6dqt0fGsP0JA"/>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_7djrU1mGEe6h99ZajyxMZg" name="Pago" content="Pago" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_7djrVFmGEe6h99ZajyxMZg" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -175,6 +191,19 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_FvxaUkxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_FvxaUUxHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_FvxaU0xHEe6TSNn8I2TD_w" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_RqqHYFw_Ee6dqt0fGsP0JA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_RqqHYVw_Ee6dqt0fGsP0JA" name="solicitud" content="solicitud" type="TYPE_VARIABLE" returnType="com.company.model.Solicitud">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_SFAhEFw_Ee6dqt0fGsP0JA" name="solicitud" dataType="_FtC2eExHEe6TSNn8I2TD_w" className="com.company.model.Solicitud"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_RqqHYlw_Ee6dqt0fGsP0JA" name="statusInput" content="statusInput" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_TwvDEFw_Ee6dqt0fGsP0JA" name="statusInput">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_TwvDEVw_Ee6dqt0fGsP0JA"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_RqqHY1w_Ee6dqt0fGsP0JA" type="JAVA_METHOD" expression="setStatus">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_FvxaVExHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_FvxaVUxHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_FvxaVkxHEe6TSNn8I2TD_w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -204,9 +233,6 @@
           <referencedElements xmi:type="expression:Expression" xmi:id="_ytCxkll-Ee6h99ZajyxMZg" name="licenciaturaDAO" content="licenciaturaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.LicenciaturaDAO" returnTypeFixed="true"/>
           <referencedElements xmi:type="expression:Expression" xmi:id="_ytCxk1l-Ee6h99ZajyxMZg" name="periodoDAO" content="periodoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.PeriodoDAO" returnTypeFixed="true"/>
         </defaultValue>
-      </data>
-      <data xmi:type="process:JavaObjectData" xmi:id="_ci9hwFv_Ee6XZZq0HrNHBg" name="comprobantePagoFileInputValue" dataType="_FtC2dkxHEe6TSNn8I2TD_w" className="org.bonitasoft.engine.bpm.contract.FileInputValue">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ci9hwVv_Ee6XZZq0HrNHBg" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_FtdGIExHEe6TSNn8I2TD_w">
         <targetForm xmi:type="expression:Expression" xmi:id="_fiYEoFFIEe6DYKt6yFgk1A" name="registroDeSolicitudForm" content="3713f576-9116-4038-8beb-98dfe3c4d403" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -297,6 +323,11 @@
         <mimeType xmi:type="expression:Expression" xmi:id="_mWO-MVv1Ee6XZZq0HrNHBg" name="" content="" returnTypeFixed="true"/>
         <url xmi:type="expression:Expression" xmi:id="_mWO-Mlv1Ee6XZZq0HrNHBg" name="" content="" returnTypeFixed="true"/>
         <initialMultipleContent xmi:type="expression:Expression" xmi:id="_mWO-M1v1Ee6XZZq0HrNHBg" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
+      </documents>
+      <documents xmi:type="process:Document" xmi:id="_duKu0Fw6Ee6dqt0fGsP0JA" name="fotografiaFile">
+        <mimeType xmi:type="expression:Expression" xmi:id="_duKu0Vw6Ee6dqt0fGsP0JA" name="" content="" returnTypeFixed="true"/>
+        <url xmi:type="expression:Expression" xmi:id="_duKu0lw6Ee6dqt0fGsP0JA" name="" content="" returnTypeFixed="true"/>
+        <initialMultipleContent xmi:type="expression:Expression" xmi:id="_duKu01w6Ee6dqt0fGsP0JA" name="" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List" returnTypeFixed="true"/>
       </documents>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_FtcfEUxHEe6TSNn8I2TD_w">
         <name xmi:type="expression:Expression" xmi:id="_FtcfEkxHEe6TSNn8I2TD_w" content="" returnTypeFixed="true"/>

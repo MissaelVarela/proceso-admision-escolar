@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6c88bbad-6a9f-4a21-a297-faed2bc3c84e",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695419554995,
+  "lastUpdate" : 1695716300946,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -243,7 +243,7 @@
                                     },
                                     "label" : {
                                       "type" : "interpolation",
-                                      "value" : "Status acutal"
+                                      "value" : "Status actual"
                                     },
                                     "placeholder" : {
                                       "type" : "constant"
@@ -1947,96 +1947,6 @@
                                                             },
                                                             "hidden" : {
                                                               "type" : "expression",
-                                                              "value" : "!solicitud_informacion_datos_personales.fotografia_url"
-                                                            },
-                                                            "labelPosition" : {
-                                                              "type" : "constant",
-                                                              "value" : "top"
-                                                            },
-                                                            "cssClasses" : {
-                                                              "type" : "constant",
-                                                              "value" : ""
-                                                            },
-                                                            "labelWidth" : {
-                                                              "type" : "constant",
-                                                              "value" : 1
-                                                            },
-                                                            "readOnly" : {
-                                                              "type" : "constant",
-                                                              "value" : true
-                                                            },
-                                                            "label" : {
-                                                              "type" : "interpolation",
-                                                              "value" : "Fotografia url"
-                                                            },
-                                                            "placeholder" : {
-                                                              "type" : "constant"
-                                                            },
-                                                            "type" : {
-                                                              "type" : "constant",
-                                                              "value" : "text"
-                                                            },
-                                                            "dimension" : {
-                                                              "type" : "constant",
-                                                              "value" : 12
-                                                            },
-                                                            "value" : {
-                                                              "type" : "variable",
-                                                              "value" : "solicitud_informacion_datos_personales.fotografia_url"
-                                                            },
-                                                            "required" : {
-                                                              "type" : "constant",
-                                                              "value" : false
-                                                            },
-                                                            "allowHTML" : {
-                                                              "type" : "constant",
-                                                              "value" : false
-                                                            },
-                                                            "minLength" : {
-                                                              "type" : "constant",
-                                                              "value" : ""
-                                                            },
-                                                            "maxLength" : {
-                                                              "type" : "constant",
-                                                              "value" : ""
-                                                            },
-                                                            "debounce" : {
-                                                              "type" : "constant",
-                                                              "value" : 0
-                                                            },
-                                                            "min" : {
-                                                              "type" : "constant"
-                                                            },
-                                                            "max" : {
-                                                              "type" : "constant"
-                                                            },
-                                                            "step" : {
-                                                              "type" : "constant",
-                                                              "value" : 1
-                                                            }
-                                                          },
-                                                          "reference" : "91466909-2ede-4a29-bed5-0c5b30dea102",
-                                                          "hasValidationError" : false,
-                                                          "id" : "pbInput",
-                                                          "description" : ""
-                                                        }
-                                                      ],
-                                                      [
-                                                        {
-                                                          "type" : "component",
-                                                          "dimension" : {
-                                                            "md" : 12,
-                                                            "sm" : 12,
-                                                            "xs" : 12,
-                                                            "lg" : 12
-                                                          },
-                                                          "propertyValues" : {
-                                                            "labelHidden" : {
-                                                              "type" : "constant",
-                                                              "value" : false
-                                                            },
-                                                            "hidden" : {
-                                                              "type" : "expression",
                                                               "value" : "!solicitud_informacion_datos_personales.curp"
                                                             },
                                                             "labelPosition" : {
@@ -2083,6 +1993,46 @@
                                                           "hasValidationError" : false,
                                                           "id" : "pbInput",
                                                           "description" : ""
+                                                        }
+                                                      ],
+                                                      [
+                                                        {
+                                                          "type" : "component",
+                                                          "dimension" : {
+                                                            "xs" : 12,
+                                                            "sm" : 12,
+                                                            "md" : 12,
+                                                            "lg" : 12
+                                                          },
+                                                          "propertyValues" : {
+                                                            "cssClasses" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "hidden" : {
+                                                              "type" : "constant",
+                                                              "value" : false
+                                                            },
+                                                            "type" : {
+                                                              "type" : "constant",
+                                                              "value" : "Process document"
+                                                            },
+                                                            "url" : {
+                                                              "type" : "constant",
+                                                              "value" : ""
+                                                            },
+                                                            "document" : {
+                                                              "type" : "variable",
+                                                              "value" : "context.fotografiaFile_ref"
+                                                            },
+                                                            "showPreview" : {
+                                                              "type" : "constant",
+                                                              "value" : true
+                                                            }
+                                                          },
+                                                          "reference" : "146e6b5e-e0fc-4ab4-a8f9-011d325ea28d",
+                                                          "hasValidationError" : false,
+                                                          "id" : "pbFileViewer"
                                                         }
                                                       ]
                                                     ]

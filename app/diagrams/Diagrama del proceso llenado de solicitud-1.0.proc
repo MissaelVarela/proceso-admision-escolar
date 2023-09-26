@@ -16,14 +16,25 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_OiuU8lNeEe6HSdqMuLpmQA" name="solicitud" content="solicitud" type="TYPE_VARIABLE" returnType="com.company.model.Solicitud">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OiuU81NeEe6HSdqMuLpmQA" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_OiuU9FNeEe6HSdqMuLpmQA" name="solicitudInput.informacion" content="if (!solicitudInput?.informacion) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def informacionVar = solicitud.informacion ?: new com.company.model.Informacion()&#xD;&#xA;informacionVar.datos_personales = {&#xD;&#xA;&#x9;if (!solicitudInput?.informacion?.datos_personales) {&#xD;&#xA;&#x9;&#x9;return null&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;def datosPersonalesVar = informacionVar.datos_personales ?: new com.company.model.DatosPersonales()&#xD;&#xA;&#x9;datosPersonalesVar.correo = solicitudInput?.informacion?.datos_personales?.correo&#xD;&#xA;&#x9;datosPersonalesVar.telefono = solicitudInput?.informacion?.datos_personales?.telefono&#xD;&#xA;&#x9;datosPersonalesVar.sexo = solicitudInput?.informacion?.datos_personales?.sexo&#xD;&#xA;&#x9;datosPersonalesVar.religion = solicitudInput?.informacion?.datos_personales?.religion&#xD;&#xA;&#x9;datosPersonalesVar.nacionalidad = solicitudInput?.informacion?.datos_personales?.nacionalidad&#xD;&#xA;&#x9;datosPersonalesVar.fecha_nacimiento = solicitudInput?.informacion?.datos_personales?.fecha_nacimiento&#xD;&#xA;&#x9;datosPersonalesVar.fotografia_url = solicitudInput?.informacion?.datos_personales?.fotografia_url&#xD;&#xA;&#x9;datosPersonalesVar.curp = solicitudInput?.informacion?.datos_personales?.curp&#xD;&#xA;&#x9;return datosPersonalesVar}()&#xD;&#xA;return informacionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Informacion">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_YIVnEFi-Ee63ddufZgkZKg" name="solicitudInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_YIVnEVi-Ee63ddufZgkZKg" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_YIVnEli-Ee63ddufZgkZKg" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_OiuU9FNeEe6HSdqMuLpmQA" name="solicitudInput.informacion" content="if (!solicitudInput?.informacion) {&#xD;&#xA;&#x9;return null&#xD;&#xA;}&#xD;&#xA;def informacionVar = solicitud.informacion ?: new com.company.model.Informacion()&#xD;&#xA;informacionVar.datos_personales = {&#xD;&#xA;&#x9;if (!solicitudInput?.informacion?.datos_personales) {&#xD;&#xA;&#x9;&#x9;return null&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;def datosPersonalesVar = informacionVar.datos_personales ?: new com.company.model.DatosPersonales()&#xD;&#xA;&#x9;datosPersonalesVar.correo = solicitudInput?.informacion?.datos_personales?.correo&#xD;&#xA;&#x9;datosPersonalesVar.telefono = solicitudInput?.informacion?.datos_personales?.telefono&#xD;&#xA;&#x9;datosPersonalesVar.sexo = solicitudInput?.informacion?.datos_personales?.sexo&#xD;&#xA;&#x9;datosPersonalesVar.religion = solicitudInput?.informacion?.datos_personales?.religion&#xD;&#xA;&#x9;datosPersonalesVar.nacionalidad = solicitudInput?.informacion?.datos_personales?.nacionalidad&#xD;&#xA;&#x9;datosPersonalesVar.fecha_nacimiento = solicitudInput?.informacion?.datos_personales?.fecha_nacimiento&#xD;&#xA;&#x9;datosPersonalesVar.curp = solicitudInput?.informacion?.datos_personales?.curp&#xD;&#xA;&#x9;return datosPersonalesVar}()&#xD;&#xA;return informacionVar" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Informacion">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_vHTk4Fw6Ee6dqt0fGsP0JA" name="solicitudInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vHTk4Vw6Ee6dqt0fGsP0JA" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_vHTk4lw6Ee6dqt0fGsP0JA" name="solicitud" dataType="_JG8eY1NdEe6HSdqMuLpmQA" className="com.company.model.Solicitud"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_OiuU-FNeEe6HSdqMuLpmQA" type="JAVA_METHOD" expression="setInformacion">
               <inputTypes>com.company.model.Informacion</inputTypes>
             </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_vftd0Fw6Ee6dqt0fGsP0JA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_vftd0Vw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" content="fotografiaFileInputValue" type="TYPE_VARIABLE" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue">
+              <referencedElements xmi:type="process:JavaObjectData" xmi:id="_wJ_w8Fw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" dataType="_JG8eYVNdEe6HSdqMuLpmQA" className="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_vftd0lw6Ee6dqt0fGsP0JA" name="fotografiaFileInput" content="fotografiaFileInput" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_zt8_4Fw6Ee6dqt0fGsP0JA" name="fotografiaFileInput" type="FILE">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_zt8_4Vw6Ee6dqt0fGsP0JA"/>
+              </referencedElements>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_vftd01w6Ee6dqt0fGsP0JA" type="ASSIGNMENT"/>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_JG8eOlNdEe6HSdqMuLpmQA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_JG8eO1NdEe6HSdqMuLpmQA" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -43,10 +54,12 @@
                   <inputs xmi:type="process:ContractInput" xmi:id="_OitG1lNeEe6HSdqMuLpmQA" name="religion" createMode="false"/>
                   <inputs xmi:type="process:ContractInput" xmi:id="_OitG11NeEe6HSdqMuLpmQA" name="nacionalidad" createMode="false"/>
                   <inputs xmi:type="process:ContractInput" xmi:id="_OitG2FNeEe6HSdqMuLpmQA" name="fecha_nacimiento" type="LOCALDATE" createMode="false"/>
-                  <inputs xmi:type="process:ContractInput" xmi:id="_OitG2VNeEe6HSdqMuLpmQA" name="fotografia_url" createMode="false"/>
                   <inputs xmi:type="process:ContractInput" xmi:id="_OitG2lNeEe6HSdqMuLpmQA" name="curp" createMode="false"/>
                 </inputs>
               </inputs>
+            </inputs>
+            <inputs xmi:type="process:ContractInput" xmi:id="_Q5KnwFw5Ee6dqt0fGsP0JA" name="fotografiaFileInput" type="FILE">
+              <mapping xmi:type="process:ContractInputMapping" xmi:id="_Q5LO0Fw5Ee6dqt0fGsP0JA"/>
             </inputs>
             <constraints xmi:type="process:ContractConstraint" xmi:id="_OiuU8FNeEe6HSdqMuLpmQA" expression="solicitudInput?.informacion != null" errorMessage="Informacion is mandatory for Solicitud" name="mandatory_solicitudInput_informacion">
               <inputNames>solicitudInput</inputNames>
@@ -125,7 +138,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_B23W2FjDEe63ddufZgkZKg" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_B23W11jDEe63ddufZgkZKg" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_DK38aljDEe63ddufZgkZKg">
-            <targetForm xmi:type="expression:Expression" xmi:id="_OFt5UFjDEe63ddufZgkZKg" name="llenadoDeDatosFamiliaresF" content="ac8823d0-a05e-4499-b767-89e6128780e5" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_OFt5UFjDEe63ddufZgkZKg" name="llenadoDeDatosFamiliaresForm" content="ac8823d0-a05e-4499-b767-89e6128780e5" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_DK38aVjDEe63ddufZgkZKg">
             <inputs xmi:type="process:ContractInput" xmi:id="_HhiaoFjDEe63ddufZgkZKg" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">
@@ -160,6 +173,9 @@
           </referencedElements>
           <referencedElements xmi:type="expression:Expression" xmi:id="_VID4cll4Ee6h99ZajyxMZg" name="solicitudDAO" content="solicitudDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="com.company.model.SolicitudDAO" returnTypeFixed="true"/>
         </defaultValue>
+      </data>
+      <data xmi:type="process:JavaObjectData" xmi:id="_mLKwUFw6Ee6dqt0fGsP0JA" name="fotografiaFileInputValue" dataType="_JG8eYVNdEe6HSdqMuLpmQA" className="org.bonitasoft.engine.bpm.contract.FileInputValue">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_mLKwUVw6Ee6dqt0fGsP0JA" content="" type="TYPE_READ_ONLY_SCRIPT" returnType="org.bonitasoft.engine.bpm.contract.FileInputValue"/>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_JG8eQ1NdEe6HSdqMuLpmQA" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_XyI_sFZwEe6WWMXPz4ylkg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
