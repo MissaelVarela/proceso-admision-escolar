@@ -92,6 +92,11 @@
       <version>1.0.0</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+      <groupId>org.bonitasoft.actorfilter</groupId>
+      <artifactId>bonita-actorfilter-single-user</artifactId>
+      <version>1.0.0</version>
+    </dependency>
     
     
     

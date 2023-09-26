@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "95b8b01a-0f35-489f-95d7-943a36f9b00d",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695333260148,
+  "lastUpdate" : 1695715917901,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -13,7 +13,19 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "repeatedCollection" : {
+            "type" : "variable"
+          }
+        },
         "reference" : "59e5dd6a-deda-4883-a759-026944bf6bfb",
         "hasValidationError" : false,
         "id" : "pbContainer",
@@ -254,7 +266,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Escuela"
+                          "value" : "Nombre de la escuela"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -273,7 +285,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "4d10a756-4620-4e2d-9e31-0589fe3d0bfc",
@@ -318,7 +356,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Pais"
+                          "value" : "País"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -337,7 +375,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "23d81abf-d53e-47ca-9996-a52813597f79",
@@ -401,7 +465,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "de2b6d41-967b-4dc4-b295-b90b0bc8a245",
@@ -465,7 +555,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -536,7 +626,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Promedio_general"
+                          "value" : "Promedio general (0 - 10)"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -555,7 +645,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",
@@ -574,10 +664,12 @@
                           "value" : 0
                         },
                         "min" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 0
                         },
                         "max" : {
-                          "type" : "constant"
+                          "type" : "constant",
+                          "value" : 10
                         },
                         "step" : {
                           "type" : "constant",

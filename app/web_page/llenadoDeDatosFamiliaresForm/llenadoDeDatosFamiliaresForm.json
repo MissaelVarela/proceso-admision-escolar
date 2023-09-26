@@ -1,10 +1,10 @@
 {
-  "id" : "llenadoDeDatosFamiliaresF",
-  "name" : "llenadoDeDatosFamiliaresF",
+  "id" : "llenadoDeDatosFamiliaresForm",
+  "name" : "llenadoDeDatosFamiliaresForm",
   "type" : "form",
   "uuid" : "ac8823d0-a05e-4499-b767-89e6128780e5",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695334261201,
+  "lastUpdate" : 1695715965032,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -269,7 +269,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "9b85e206-6052-4290-a97a-ed90439e0f51",
@@ -314,7 +340,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Profesion"
+                          "value" : "Profesión"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -333,7 +359,33 @@
                         },
                         "required" : {
                           "type" : "constant",
+                          "value" : true
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "debounce" : {
+                          "type" : "constant",
+                          "value" : 0
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant"
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "d1fde974-dfce-4704-a6a7-a9d651ed9489",
@@ -378,7 +430,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Telefono"
+                          "value" : "Teléfono"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -397,7 +449,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "allowHTML" : {
                           "type" : "constant",

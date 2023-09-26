@@ -1,10 +1,10 @@
 {
-  "id" : "pagoForm",
-  "name" : "pagoForm",
+  "id" : "llenadoDeDatosPagoForm",
+  "name" : "llenadoDeDatosPagoForm",
   "type" : "form",
   "uuid" : "f98ee6c3-40ce-471c-a32e-6e86570ec9c1",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695417760135,
+  "lastUpdate" : 1695712617330,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -285,7 +285,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "formInput.comprobantePagoInput"
+                          "value" : "formInput.comprobantePagoFileInput"
                         },
                         "required" : {
                           "type" : "constant",
@@ -483,7 +483,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"comprobantePagoInput\" : null\r",
+        "  \"comprobantePagoFileInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -507,7 +507,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tcomprobantePagoInput: $data.formInput.comprobantePagoInput",
+        "\tcomprobantePagoFileInput: $data.formInput.comprobantePagoFileInput",
         "}"
       ],
       "exposed" : false
