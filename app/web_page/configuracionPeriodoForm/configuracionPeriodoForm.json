@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "83c4e5b7-51f8-447c-bf5c-f95b1f8eaf63",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694507089944,
+  "lastUpdate" : 1695794474772,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -237,7 +237,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nombre"
+                          "value" : "Nombre:"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -323,14 +323,14 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha_inicio"
+                          "value" : "Fecha de inicio:"
                         },
                         "type" : {
                           "type" : "constant"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "todayLabel" : {
                           "type" : "constant",
@@ -403,14 +403,14 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Fecha_fin"
+                          "value" : "Fecha de fin:"
                         },
                         "type" : {
                           "type" : "constant"
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "todayLabel" : {
                           "type" : "constant",
@@ -439,12 +439,60 @@
                         "value" : {
                           "type" : "variable",
                           "value" : "periodo.fecha_fin"
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
                         }
                       },
                       "reference" : "c50c83fa-854f-4c3d-acc2-ae6b9200b776",
                       "hasValidationError" : false,
                       "id" : "pbDatePicker",
                       "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Periodo activo"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "periodo.activo"
+                        }
+                      },
+                      "reference" : "b6d840f8-f3c4-44aa-b88d-0ab05fb90ed3",
+                      "hasValidationError" : false,
+                      "id" : "pbCheckbox"
                     }
                   ]
                 ]
@@ -454,10 +502,100 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
+                  "xs" : 6,
+                  "sm" : 6,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Cancelar"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Submit task"
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "cancelOutput"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "dataFromError" : {
+                    "type" : "variable"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant",
+                    "value" : "Last"
+                  },
+                  "valueToAdd" : {
+                    "type" : "constant"
+                  },
+                  "removeItem" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "b0b48f5f-51cd-473e-8fb3-fc511a8b4fa4",
+                "hasValidationError" : false,
+                "id" : "pbButton"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 6,
+                  "sm" : 6,
+                  "xs" : 6,
+                  "lg" : 6
                 },
                 "propertyValues" : {
                   "removeItem" : {
@@ -618,9 +756,9 @@
       "exposed" : false
     },
     "periodo" : {
-      "type" : "url",
+      "type" : "json",
       "value" : [
-        "../{{context.periodo_ref.link}}"
+        "{}"
       ],
       "exposed" : false
     },
@@ -648,8 +786,10 @@
         "\t\tperiodoInput: {",
         "\t\t\tnombre: $data.periodo.nombre !== undefined ? $data.periodo.nombre : null,",
         "\t\t\tfecha_inicio: $data.periodo.fecha_inicio !== undefined ? $data.periodo.fecha_inicio : null,",
-        "\t\t\tfecha_fin: $data.periodo.fecha_fin !== undefined ? $data.periodo.fecha_fin : null",
-        "\t\t}",
+        "\t\t\tfecha_fin: $data.periodo.fecha_fin !== undefined ? $data.periodo.fecha_fin : null,",
+        "\t\t\tactivo: $data.periodo.activo !== undefined ? $data.periodo.activo : null",
+        "\t\t},",
+        "\t\tcancelInput: false",
         "\t}",
         "}"
       ],
@@ -666,6 +806,37 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "cancelOutput" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"periodoInput\": {",
+        "        \"nombre\": \"\",",
+        "        \"fecha_inicio\": null,",
+        "        \"fecha_fin\": null,",
+        "        \"activo\": false",
+        "    },",
+        "    \"cancelInput\": true",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "periodoExistente" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.periodo_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "initPeriodo" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.periodoExistente) {",
+        "    $data.periodo = $data.periodoExistente;",
+        "}"
       ],
       "exposed" : false
     }
