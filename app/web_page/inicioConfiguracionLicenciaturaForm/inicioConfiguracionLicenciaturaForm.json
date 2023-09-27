@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "a236e627-e4ce-4c70-80be-98069a1a7112",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1694507282111,
+  "lastUpdate" : 1695786089615,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -194,11 +194,11 @@
                         },
                         "availableValues" : {
                           "type" : "expression",
-                          "value" : "licenciaturas"
+                          "value" : "licenciaturasMapeo"
                         },
                         "displayedKey" : {
                           "type" : "constant",
-                          "value" : "nombre"
+                          "value" : "display"
                         },
                         "returnedKey" : {
                           "type" : "constant",
@@ -593,6 +593,23 @@
         "    isNewInput: true,",
         "    licenciaturaIdInput: -1,",
         "};"
+      ],
+      "exposed" : false
+    },
+    "licenciaturasMapeo" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.licenciaturas) {",
+        "    return $data.licenciaturas.map(it => {",
+        "        if (it.activo) {",
+        "            it.display = \"☑ \" + it.nombre;",
+        "        }",
+        "        else {",
+        "            it.display = \"☐ \" + it.nombre;",
+        "        }",
+        "        return it;",
+        "    });",
+        "}"
       ],
       "exposed" : false
     }
