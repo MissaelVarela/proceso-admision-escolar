@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_TBIpEFExEe6neaQDJV7ZpA" name="Diagrama del proceso configuración de licenciaturas" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_TBIpEVExEe6neaQDJV7ZpA" name="Configuración de licenciaturas">
       <elements xmi:type="process:Lane" xmi:id="_TBIpElExEe6neaQDJV7ZpA" name="Administración" actor="_TBIpK1ExEe6neaQDJV7ZpA">
@@ -88,6 +88,13 @@
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_YaHmXFE5Ee6neaQDJV7ZpA" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
+        <filters xmi:type="process:ActorFilter" xmi:id="_17L4wFzEEe6yaPfKzw1BsQ" name="initiatorUserFilter" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_17L4wVzEEe6yaPfKzw1BsQ" definitionId="bonita-actorfilter-initiator" version="1.0">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_17L4wlzEEe6yaPfKzw1BsQ" key="autoAssign">
+              <expression xmi:type="expression:Expression" xmi:id="_17L4w1zEEe6yaPfKzw1BsQ" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+        </filters>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_2DbcQFEzEe6neaQDJV7ZpA" name="licenciatura" dataType="_TBIpRFExEe6neaQDJV7ZpA" className="com.company.model.Licenciatura">
         <defaultValue xmi:type="expression:Expression" xmi:id="_2DbcQVEzEe6neaQDJV7ZpA" name="init_licenciatura()" content="if (isNewInput) {&#xD;&#xA;&#x9;def lic = licenciaturaDAO.newInstance(&quot;&quot;)&#xD;&#xA;} else {&#xD;&#xA;&#x9;def licenciatura = licenciaturaDAO.findByPersistenceId(licenciaturaIdInput)&#xD;&#xA;&#x9;if (licenciatura) {&#xD;&#xA;&#x9;&#x9;return licenciatura&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;else {&#xD;&#xA;&#x9;&#x9;throw new Exception(&quot;No se encontró la licenciatura a la cual se quiere hacer referencia para modificar.&quot;)&#xD;&#xA;&#x9;}&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="com.company.model.Licenciatura">
