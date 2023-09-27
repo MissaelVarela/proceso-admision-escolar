@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "95b8b01a-0f35-489f-95d7-943a36f9b00d",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695794520290,
+  "lastUpdate" : 1695856851754,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -356,7 +356,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "País"
+                          "value" : "Ciudad"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -371,7 +371,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "solicitud_informacion_datos_escuela_cursada.pais"
+                          "value" : "solicitud_informacion_datos_escuela_cursada.ciudad"
                         },
                         "required" : {
                           "type" : "constant",
@@ -404,7 +404,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "23d81abf-d53e-47ca-9996-a52813597f79",
+                      "reference" : "fc9e1c26-b954-4893-b867-23f371436b73",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -536,7 +536,7 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Ciudad"
+                          "value" : "País"
                         },
                         "placeholder" : {
                           "type" : "constant"
@@ -551,7 +551,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "solicitud_informacion_datos_escuela_cursada.ciudad"
+                          "value" : "solicitud_informacion_datos_escuela_cursada.pais"
                         },
                         "required" : {
                           "type" : "constant",
@@ -584,7 +584,7 @@
                           "value" : 1
                         }
                       },
-                      "reference" : "fc9e1c26-b954-4893-b867-23f371436b73",
+                      "reference" : "23d81abf-d53e-47ca-9996-a52813597f79",
                       "hasValidationError" : false,
                       "id" : "pbInput",
                       "description" : ""
@@ -683,6 +683,58 @@
                     }
                   ]
                 ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "6c9bfa92-c0fd-47b2-9dd3-b1eb6f2b5c33",
+                "hasValidationError" : false,
+                "id" : "pbText"
               }
             ],
             [

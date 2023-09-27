@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "fae9c9b7-1cb8-4d60-8d41-4af7cf11f78f",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695715041176,
+  "lastUpdate" : 1695856841254,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -751,6 +751,58 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "741ea1af-b8b9-4a18-afcc-c890401c20df",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -1037,6 +1089,22 @@
       "value" : [
         "{\r",
         "  \"fotografiaFileInput\" : null\r",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "aspirante" : {
+      "type" : "url",
+      "value" : [
+        "../API/identity/user/{{solicitud.aspirante_id}}?d=professional_data"
+      ],
+      "exposed" : false
+    },
+    "completarDatos" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.aspirante) {",
+        "    $data.solicitud_informacion_datos_personales.correo = $data.aspirante.professional_data.email",
         "}"
       ],
       "exposed" : false

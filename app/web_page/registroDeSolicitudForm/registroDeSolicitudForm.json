@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3713f576-9116-4038-8beb-98dfe3c4d403",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695413798191,
+  "lastUpdate" : 1695856215167,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -192,7 +192,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 8,
+                        "sm" : 6,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -270,14 +270,12 @@
                       "reference" : "ea12569d-9fa7-4f19-b5cf-cf05d9427526",
                       "hasValidationError" : false,
                       "id" : "pbInput"
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 8,
+                        "sm" : 6,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -435,7 +433,7 @@
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 8,
+                        "sm" : 6,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -500,14 +498,12 @@
                       "reference" : "5f0a5288-8e07-46f8-801e-350cf47c4202",
                       "hasValidationError" : false,
                       "id" : "pbSelect"
-                    }
-                  ],
-                  [
+                    },
                     {
                       "type" : "component",
                       "dimension" : {
                         "xs" : 12,
-                        "sm" : 8,
+                        "sm" : 6,
                         "md" : 6,
                         "lg" : 6
                       },
@@ -580,6 +576,58 @@
               {
                 "type" : "component",
                 "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "4438527e-738b-421e-b5ca-7cde888e2501",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
                   "md" : 12,
                   "sm" : 12,
                   "xs" : 12,
@@ -599,7 +647,7 @@
                   },
                   "buttonStyle" : {
                     "type" : "constant",
-                    "value" : "success"
+                    "value" : "primary"
                   },
                   "label" : {
                     "type" : "interpolation",
@@ -644,7 +692,7 @@
                   },
                   "alignment" : {
                     "type" : "constant",
-                    "value" : "center"
+                    "value" : "right"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -787,7 +835,7 @@
     "licenciaturas_disponibles" : {
       "type" : "url",
       "value" : [
-        "../API/bdm/businessData/com.company.model.Licenciatura?q=find&p=0&c=99&f=activo=true"
+        "../API/bdm/businessData/com.company.model.Licenciatura?q=findByActivo&p=0&c=99&f=activo=true"
       ],
       "exposed" : false
     },

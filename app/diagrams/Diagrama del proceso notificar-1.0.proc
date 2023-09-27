@@ -57,9 +57,9 @@
                 <expression xmi:type="expression:Expression" xmi:id="_oJ7_jVZuEe6WWMXPz4ylkg" content="" returnTypeFixed="true"/>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_oJ7_jlZuEe6WWMXPz4ylkg" key="subject">
-                <expression xmi:type="expression:Expression" xmi:id="_oJ7_j1ZuEe6WWMXPz4ylkg" name="subject()" content="String simbolo = &quot;&quot;&#xD;&#xA;&#xD;&#xA;switch (tipo) {&#xD;&#xA;&#x9;case 1: &#xD;&#xA;&#x9;&#x9;simbolo = &quot;[✔]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 2:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[¡]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 3:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[！]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 4:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[✘]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return simbolo + asunto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
-                  <referencedElements xmi:type="process:Data" xmi:id="_7Vr_QFi2Ee63ddufZgkZKg" name="tipo" dataType="_Qi887lNdEe6HSdqMuLpmQA"/>
-                  <referencedElements xmi:type="process:Data" xmi:id="_7Vr_QVi2Ee63ddufZgkZKg" name="asunto" dataType="_Qi888VNdEe6HSdqMuLpmQA"/>
+                <expression xmi:type="expression:Expression" xmi:id="_oJ7_j1ZuEe6WWMXPz4ylkg" name="subject()" content="String simbolo = &quot;&quot;&#xD;&#xA;&#xD;&#xA;switch (tipo) {&#xD;&#xA;&#x9;case 1:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[✔]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 2:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[¡]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 3:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[!]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;case 4:&#xD;&#xA;&#x9;&#x9;simbolo = &quot;[✘]: &quot;&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return simbolo + asunto" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnTypeFixed="true">
+                  <referencedElements xmi:type="process:Data" xmi:id="_9W1AUF2HEe6jY5lD7VQsmw" name="tipo" dataType="_Qi887lNdEe6HSdqMuLpmQA"/>
+                  <referencedElements xmi:type="process:Data" xmi:id="_9W1AUV2HEe6jY5lD7VQsmw" name="asunto" dataType="_Qi888VNdEe6HSdqMuLpmQA"/>
                 </expression>
               </parameters>
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_oJ7_kFZuEe6WWMXPz4ylkg" key="html">

@@ -90,7 +90,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_7FNMWFNdEe6HSdqMuLpmQA" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_7FNMV1NdEe6HSdqMuLpmQA" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_8GH2ylNdEe6HSdqMuLpmQA">
-            <targetForm xmi:type="expression:Expression" xmi:id="_qesocFjAEe63ddufZgkZKg" name="llenadoDeDatosDeEscuelaCursadaF" content="95b8b01a-0f35-489f-95d7-943a36f9b00d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_qesocFjAEe63ddufZgkZKg" name="llenadoDeDatosDeEscuelaCursadaForm" content="95b8b01a-0f35-489f-95d7-943a36f9b00d" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_8GH2yVNdEe6HSdqMuLpmQA">
             <inputs xmi:type="process:ContractInput" xmi:id="_Qh7MkFNeEe6HSdqMuLpmQA" name="solicitudInput" type="COMPLEX" dataReference="solicitud" createMode="false">

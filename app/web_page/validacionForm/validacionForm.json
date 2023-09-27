@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "6c88bbad-6a9f-4a21-a297-faed2bc3c84e",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695716300946,
+  "lastUpdate" : 1695857287526,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -960,6 +960,14 @@
                                                                         "value" : {
                                                                           "type" : "variable",
                                                                           "value" : "solicitud_informacion_datos_solicitud_licenciatura.activo"
+                                                                        },
+                                                                        "required" : {
+                                                                          "type" : "constant",
+                                                                          "value" : false
+                                                                        },
+                                                                        "allowHTML" : {
+                                                                          "type" : "constant",
+                                                                          "value" : false
                                                                         }
                                                                       },
                                                                       "reference" : "7f544884-c48b-447a-8980-43c8209c9210",
@@ -1312,6 +1320,50 @@
                                                                       "hasValidationError" : false,
                                                                       "id" : "pbDatePicker",
                                                                       "description" : ""
+                                                                    }
+                                                                  ],
+                                                                  [
+                                                                    {
+                                                                      "type" : "component",
+                                                                      "dimension" : {
+                                                                        "xs" : 12,
+                                                                        "sm" : 12,
+                                                                        "md" : 12,
+                                                                        "lg" : 12
+                                                                      },
+                                                                      "propertyValues" : {
+                                                                        "cssClasses" : {
+                                                                          "type" : "constant",
+                                                                          "value" : ""
+                                                                        },
+                                                                        "hidden" : {
+                                                                          "type" : "expression",
+                                                                          "value" : "!solicitud_informacion_datos_solicitud_periodo_de_ingreso.activo"
+                                                                        },
+                                                                        "disabled" : {
+                                                                          "type" : "constant",
+                                                                          "value" : true
+                                                                        },
+                                                                        "required" : {
+                                                                          "type" : "constant",
+                                                                          "value" : false
+                                                                        },
+                                                                        "allowHTML" : {
+                                                                          "type" : "constant",
+                                                                          "value" : false
+                                                                        },
+                                                                        "label" : {
+                                                                          "type" : "interpolation",
+                                                                          "value" : "Activo"
+                                                                        },
+                                                                        "value" : {
+                                                                          "type" : "variable",
+                                                                          "value" : "solicitud_informacion_datos_solicitud_periodo_de_ingreso.activo"
+                                                                        }
+                                                                      },
+                                                                      "reference" : "86c25394-500f-449f-8f31-1603f94494d0",
+                                                                      "hasValidationError" : false,
+                                                                      "id" : "pbCheckbox"
                                                                     }
                                                                   ]
                                                                 ]
@@ -2929,6 +2981,174 @@
                 "type" : "component",
                 "dimension" : {
                   "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<br<><br>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "9f347be0-7298-4c22-aa3c-c87b4fd0b701",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Observaciones:"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.observacionesInput"
+                  }
+                },
+                "reference" : "29875f6b-107e-49fe-bea6-cb637bae994e",
+                "hasValidationError" : false,
+                "id" : "pbTextarea"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Es necesario agregar observaciones para <strong>rechazar</strong> o para <strong>solicitar correción</strong> en la solicitud.<br>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  }
+                },
+                "reference" : "8897f92b-1506-46c6-9d16-9bf904a3d4bc",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
                   "sm" : 4,
                   "md" : 4,
                   "lg" : 4
@@ -2943,8 +3163,8 @@
                     "value" : false
                   },
                   "disabled" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -2978,7 +3198,7 @@
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "statusData[2]"
+                    "value" : "formOutput[0]"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable"
@@ -3033,8 +3253,8 @@
                     "value" : false
                   },
                   "disabled" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -3042,7 +3262,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Correción de datos"
+                    "value" : "Solicitar correción"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -3068,7 +3288,7 @@
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "statusData[1]"
+                    "value" : "formOutput[1]"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable"
@@ -3158,7 +3378,7 @@
                   },
                   "dataToSend" : {
                     "type" : "expression",
-                    "value" : "statusData[0]"
+                    "value" : "formOutput[2]"
                   },
                   "dataFromSuccess" : {
                     "type" : "variable"
@@ -3205,7 +3425,9 @@
     "formInput" : {
       "type" : "json",
       "value" : [
-        "{ }"
+        "{ ",
+        "    \"observacionesInput\": null ",
+        "}"
       ],
       "exposed" : false
     },
@@ -3221,32 +3443,6 @@
         "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
         "\t}",
         "}"
-      ],
-      "exposed" : false
-    },
-    "formOutput" : {
-      "type" : "expression",
-      "value" : [
-        "return {",
-        "",
-        "}"
-      ],
-      "exposed" : false
-    },
-    "statusData" : {
-      "type" : "json",
-      "value" : [
-        "[",
-        "{",
-        "    \"statusInput\":\"validada\"",
-        "},",
-        "{",
-        "    \"statusInput\":\"modificación\"",
-        "},",
-        "{",
-        "    \"statusInput\":\"rechazada\"",
-        "}",
-        "]"
       ],
       "exposed" : false
     },
@@ -3346,6 +3542,26 @@
       "value" : [
         "var value = $data.solicitud_informacion_datos_personales.sexo",
         "return value ? \"Hombre\" : \"Mujer\";"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return [",
+        "    {",
+        "        statusInput:\"rechazada\",",
+        "        observacionesInput: $data.formInput.observacionesInput",
+        "    },",
+        "    {",
+        "        statusInput:\"modificación\",",
+        "        observacionesInput: $data.formInput.observacionesInput",
+        "    },",
+        "    {",
+        "        statusInput:\"validada\",",
+        "        observacionesInput: $data.formInput.observacionesInput",
+        "    }",
+        "];"
       ],
       "exposed" : false
     }
