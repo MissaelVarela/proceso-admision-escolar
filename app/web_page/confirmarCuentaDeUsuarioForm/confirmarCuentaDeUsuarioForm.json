@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c9cdf9b9-ceb2-4003-8c1e-d8ff2eeadd25",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695331527460,
+  "lastUpdate" : 1695806320791,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -27,6 +27,127 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "Confirma tu cuenta"
+                  },
+                  "level" : {
+                    "type" : "constant",
+                    "value" : "Level 1"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "9d0e5f66-e63b-4d2e-8db3-9a8a3275477a",
+                "hasValidationError" : false,
+                "id" : "pbTitle"
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-info"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  }
+                },
+                "reference" : "254a3962-f3be-43b9-884d-97c78c09da94",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Default label"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "Ingresa la <strong>clave de confirmación</strong> enviada a tu correo."
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        }
+                      },
+                      "reference" : "f8961fd2-164b-42c3-acbb-2bffe6d9f274",
+                      "hasValidationError" : false,
+                      "id" : "pbText"
+                    }
+                  ]
+                ]
+              }
+            ],
             [
               {
                 "type" : "component",
@@ -63,14 +184,14 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Confirmacion Id Input"
+                    "value" : "Clave de confirmación:"
                   },
                   "placeholder" : {
                     "type" : "constant"
                   },
                   "type" : {
                     "type" : "constant",
-                    "value" : "number"
+                    "value" : "text"
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -78,11 +199,37 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.confirmacionIdInput"
+                    "value" : "formInput.confirmacionClaveInput"
                   },
                   "required" : {
                     "type" : "constant",
                     "value" : true
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "minLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "maxLength" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "debounce" : {
+                    "type" : "constant",
+                    "value" : 0
+                  },
+                  "min" : {
+                    "type" : "constant"
+                  },
+                  "max" : {
+                    "type" : "constant"
+                  },
+                  "step" : {
+                    "type" : "constant",
+                    "value" : 1
                   }
                 },
                 "reference" : "6528f3ce-1e28-44e4-9952-eec49430c29b",
@@ -118,7 +265,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Enviar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -164,6 +311,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "bfa3a5c4-84dd-4b0e-87bd-5a66bf9fe800",
@@ -234,7 +402,7 @@
       "type" : "json",
       "value" : [
         "{\r",
-        "  \"confirmacionIdInput\" : 0\r",
+        "  \"confirmacionClaveInput\" : null\r",
         "}"
       ],
       "exposed" : false
@@ -258,7 +426,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tconfirmacionIdInput: $data.formInput.confirmacionIdInput",
+        "\tconfirmacionClaveInput: $data.formInput.confirmacionClaveInput",
         "}"
       ],
       "exposed" : false
