@@ -124,7 +124,8 @@
     <membership>
       <userName>thomas.wallis</userName>
       <roleName>empleado</roleName>
-      <groupName>escuela</groupName>
+      <groupName>adminitración</groupName>
+      <groupParentPath>/escuela</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>

@@ -1,10 +1,10 @@
 {
-  "id" : "llenadoDeDatosDeEscuelaCursadaF",
-  "name" : "llenadoDeDatosDeEscuelaCursadaF",
+  "id" : "llenadoDeDatosDeEscuelaCursadaForm",
+  "name" : "llenadoDeDatosDeEscuelaCursadaForm",
   "type" : "form",
   "uuid" : "95b8b01a-0f35-489f-95d7-943a36f9b00d",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1695715917901,
+  "lastUpdate" : 1695794520290,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
