@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "deeb611b-c189-45b6-a7ed-c2d39ae034fd",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696057586911,
+  "lastUpdate" : 1696062860440,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -107,7 +107,7 @@
                       "xs" : 12,
                       "sm" : 1,
                       "md" : 1,
-                      "lg" : 1
+                      "lg" : 3
                     },
                     "propertyValues" : {
                       "cssClasses" : {
@@ -135,7 +135,7 @@
                       "xs" : 12,
                       "sm" : 10,
                       "md" : 10,
-                      "lg" : 10
+                      "lg" : 6
                     },
                     "propertyValues" : {
                       "cssClasses" : {
@@ -193,7 +193,7 @@
                                 "propertyValues" : {
                                   "cssClasses" : {
                                     "type" : "expression",
-                                    "value" : "($item.status == \"nueva\") ? \"label label-warning\" : ($item.status == \"rechazada\") ? \"label label-danger\" : ($item.status == \"modificación\") ? \"label label-warning\" : ($item.status == \"validada\") ? \"label label-primary\" : ($item.status == \"aprobada\") ? \"label label- success\" : \"label label-default\""
+                                    "value" : "($item.status == \"nueva\") ? \"label label-warning\" : ($item.status == \"rechazada\") ? \"label label-danger\" : ($item.status == \"modificación\") ? \"label label-warning\" : ($item.status == \"validada\") ? \"label label-primary\" : ($item.status == \"aprobada\") ? \"label label-success\" : \"label label-default\""
                                   },
                                   "hidden" : {
                                     "type" : "constant",
@@ -542,80 +542,9 @@
                           "type" : "component",
                           "dimension" : {
                             "xs" : 12,
-                            "sm" : 6,
-                            "md" : 6,
-                            "lg" : 6
-                          },
-                          "propertyValues" : {
-                            "cssClasses" : {
-                              "type" : "constant",
-                              "value" : ""
-                            },
-                            "hidden" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "allowHTML" : {
-                              "type" : "constant",
-                              "value" : false
-                            },
-                            "text" : {
-                              "type" : "interpolation",
-                              "value" : "Ver resumen del proceso"
-                            },
-                            "type" : {
-                              "type" : "constant",
-                              "value" : "overview"
-                            },
-                            "targetUrl" : {
-                              "type" : "constant",
-                              "value" : "http://"
-                            },
-                            "pageToken" : {
-                              "type" : "constant"
-                            },
-                            "processName" : {
-                              "type" : "constant"
-                            },
-                            "processVersion" : {
-                              "type" : "constant"
-                            },
-                            "taskId" : {
-                              "type" : "constant"
-                            },
-                            "caseId" : {
-                              "type" : "constant"
-                            },
-                            "target" : {
-                              "type" : "constant",
-                              "value" : "_self"
-                            },
-                            "appToken" : {
-                              "type" : "constant"
-                            },
-                            "urlParams" : {
-                              "type" : "constant"
-                            },
-                            "alignment" : {
-                              "type" : "constant",
-                              "value" : "center"
-                            },
-                            "buttonStyle" : {
-                              "type" : "constant",
-                              "value" : "default"
-                            }
-                          },
-                          "reference" : "1515a278-8095-422b-8f8e-ec9e0f3f5d53",
-                          "hasValidationError" : false,
-                          "id" : "pbLink"
-                        },
-                        {
-                          "type" : "component",
-                          "dimension" : {
-                            "xs" : 12,
-                            "sm" : 6,
-                            "md" : 6,
-                            "lg" : 6
+                            "sm" : 12,
+                            "md" : 12,
+                            "lg" : 12
                           },
                           "propertyValues" : {
                             "cssClasses" : {
@@ -667,11 +596,11 @@
                             },
                             "urlParams" : {
                               "type" : "expression",
-                              "value" : "detallesParametros"
+                              "value" : "{ id: $item.persistence_id }"
                             },
                             "alignment" : {
                               "type" : "constant",
-                              "value" : "center"
+                              "value" : "right"
                             },
                             "buttonStyle" : {
                               "type" : "constant",
@@ -789,19 +718,17 @@
       ],
       "exposed" : false
     },
-    "detallesParametros" : {
-      "type" : "json",
-      "value" : [
-        "{",
-        "    \"id\": \"70\"",
-        "}"
-      ],
-      "exposed" : false
-    },
     "haySolicitudes" : {
       "type" : "expression",
       "value" : [
-        "return $data.misSolicitudes && $data.misSolicitudes. > 0;"
+        "return ($data.misSolicitudes && $data.misSolicitudes.length > 0);"
+      ],
+      "exposed" : false
+    },
+    "consulta" : {
+      "type" : "url",
+      "value" : [
+        "../API/bdm/businessData/com.company.model.Solicitud?q=findByAspirante_id&p=0&c=10&f=aspirante_id={{session.user_id}}"
       ],
       "exposed" : false
     }

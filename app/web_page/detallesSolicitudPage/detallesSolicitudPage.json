@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "cfc260ab-d633-482e-9425-163d56208f5e",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696057160016,
+  "lastUpdate" : 1696063191615,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -275,7 +275,7 @@
                                   },
                                   "label" : {
                                     "type" : "interpolation",
-                                    "value" : "Aspirante_id"
+                                    "value" : "Aspirante id"
                                   },
                                   "placeholder" : {
                                     "type" : "constant"
@@ -433,7 +433,7 @@
                                   },
                                   "label" : {
                                     "type" : "interpolation",
-                                    "value" : "Fecha_inicio"
+                                    "value" : "Fecha de inicio"
                                   },
                                   "type" : {
                                     "type" : "constant"
@@ -483,6 +483,10 @@
                                     "value" : "solicitud_selected.fecha_inicio"
                                   },
                                   "withTimeZone" : {
+                                    "type" : "constant",
+                                    "value" : false
+                                  },
+                                  "allowHTML" : {
                                     "type" : "constant",
                                     "value" : false
                                   }
@@ -741,7 +745,7 @@
                                         },
                                         "text" : {
                                           "type" : "interpolation",
-                                          "value" : "Informacion"
+                                          "value" : "Información"
                                         },
                                         "alignment" : {
                                           "type" : "constant",
@@ -750,6 +754,10 @@
                                         "dimension" : {
                                           "type" : "constant",
                                           "value" : 12
+                                        },
+                                        "allowHTML" : {
+                                          "type" : "constant",
+                                          "value" : false
                                         }
                                       },
                                       "reference" : "59fc2d1f-9f15-441c-b870-133030ac4b6b",
@@ -857,7 +865,7 @@
                                                     },
                                                     "text" : {
                                                       "type" : "interpolation",
-                                                      "value" : "DatosSolicitud"
+                                                      "value" : "Datos de la solicitud"
                                                     },
                                                     "alignment" : {
                                                       "type" : "constant",
@@ -866,6 +874,10 @@
                                                     "dimension" : {
                                                       "type" : "constant",
                                                       "value" : 12
+                                                    },
+                                                    "allowHTML" : {
+                                                      "type" : "constant",
+                                                      "value" : false
                                                     }
                                                   },
                                                   "reference" : "72d6fb52-ac14-4845-9b39-5f0d4d0ae682",
@@ -1153,7 +1165,7 @@
                                                                       },
                                                                       "label" : {
                                                                         "type" : "interpolation",
-                                                                        "value" : "Descripcion"
+                                                                        "value" : "Descripción"
                                                                       },
                                                                       "placeholder" : {
                                                                         "type" : "constant"
@@ -1173,6 +1185,32 @@
                                                                       "required" : {
                                                                         "type" : "constant",
                                                                         "value" : false
+                                                                      },
+                                                                      "allowHTML" : {
+                                                                        "type" : "constant",
+                                                                        "value" : false
+                                                                      },
+                                                                      "minLength" : {
+                                                                        "type" : "constant",
+                                                                        "value" : ""
+                                                                      },
+                                                                      "maxLength" : {
+                                                                        "type" : "constant",
+                                                                        "value" : ""
+                                                                      },
+                                                                      "debounce" : {
+                                                                        "type" : "constant",
+                                                                        "value" : 0
+                                                                      },
+                                                                      "min" : {
+                                                                        "type" : "constant"
+                                                                      },
+                                                                      "max" : {
+                                                                        "type" : "constant"
+                                                                      },
+                                                                      "step" : {
+                                                                        "type" : "constant",
+                                                                        "value" : 1
                                                                       }
                                                                     },
                                                                     "reference" : "e186db67-dc77-4e30-99b2-3855cd041208",
@@ -1262,7 +1300,7 @@
                                                                       },
                                                                       "label" : {
                                                                         "type" : "interpolation",
-                                                                        "value" : "Precio_inscripcion"
+                                                                        "value" : "Precio de inscripción"
                                                                       },
                                                                       "placeholder" : {
                                                                         "type" : "constant"
@@ -1282,6 +1320,32 @@
                                                                       "required" : {
                                                                         "type" : "constant",
                                                                         "value" : false
+                                                                      },
+                                                                      "allowHTML" : {
+                                                                        "type" : "constant",
+                                                                        "value" : false
+                                                                      },
+                                                                      "minLength" : {
+                                                                        "type" : "constant",
+                                                                        "value" : ""
+                                                                      },
+                                                                      "maxLength" : {
+                                                                        "type" : "constant",
+                                                                        "value" : ""
+                                                                      },
+                                                                      "debounce" : {
+                                                                        "type" : "constant",
+                                                                        "value" : 0
+                                                                      },
+                                                                      "min" : {
+                                                                        "type" : "constant"
+                                                                      },
+                                                                      "max" : {
+                                                                        "type" : "constant"
+                                                                      },
+                                                                      "step" : {
+                                                                        "type" : "constant",
+                                                                        "value" : 1
                                                                       }
                                                                     },
                                                                     "reference" : "19549427-63f3-4d78-b03c-2402815e3a79",
@@ -2178,7 +2242,7 @@
                                                     },
                                                     "text" : {
                                                       "type" : "interpolation",
-                                                      "value" : "DatosPersonales"
+                                                      "value" : "Datos personales"
                                                     },
                                                     "alignment" : {
                                                       "type" : "constant",
@@ -2187,6 +2251,10 @@
                                                     "dimension" : {
                                                       "type" : "constant",
                                                       "value" : 12
+                                                    },
+                                                    "allowHTML" : {
+                                                      "type" : "constant",
+                                                      "value" : false
                                                     }
                                                   },
                                                   "reference" : "89dce02f-60e4-4b2b-adb5-2b1a03d090d8",
@@ -2358,7 +2426,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Telefono"
+                                                            "value" : "Teléfono"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -2378,6 +2446,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "7de2e60d-810e-4b2d-b7c9-69de400c7719",
@@ -2390,45 +2484,85 @@
                                                       {
                                                         "type" : "component",
                                                         "dimension" : {
-                                                          "md" : 12,
-                                                          "sm" : 12,
                                                           "xs" : 12,
+                                                          "sm" : 12,
+                                                          "md" : 12,
                                                           "lg" : 12
                                                         },
                                                         "propertyValues" : {
-                                                          "labelHidden" : {
-                                                            "type" : "constant",
-                                                            "value" : false
-                                                          },
-                                                          "hidden" : {
-                                                            "type" : "expression",
-                                                            "value" : "!solicitud_informacion_datos_personales.sexo"
-                                                          },
                                                           "cssClasses" : {
                                                             "type" : "constant",
                                                             "value" : ""
                                                           },
-                                                          "disabled" : {
+                                                          "hidden" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "required" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "readOnly" : {
                                                             "type" : "constant",
                                                             "value" : true
+                                                          },
+                                                          "labelHidden" : {
+                                                            "type" : "constant",
+                                                            "value" : false
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
                                                             "value" : "Sexo"
                                                           },
-                                                          "dimension" : {
+                                                          "labelPosition" : {
                                                             "type" : "constant",
-                                                            "value" : 12
+                                                            "value" : "top"
+                                                          },
+                                                          "labelWidth" : {
+                                                            "type" : "constant",
+                                                            "value" : 4
+                                                          },
+                                                          "placeholder" : {
+                                                            "type" : "interpolation"
                                                           },
                                                           "value" : {
                                                             "type" : "variable",
-                                                            "value" : "solicitud_informacion_datos_personales.sexo"
+                                                            "value" : "getSexo"
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "type" : {
+                                                            "type" : "constant",
+                                                            "value" : "text"
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
-                                                        "reference" : "51e5b504-5eb2-4008-ad78-836743c0c09f",
+                                                        "reference" : "13920186-f636-460c-b468-81744bbbe99d",
                                                         "hasValidationError" : false,
-                                                        "id" : "pbCheckbox",
-                                                        "description" : ""
+                                                        "id" : "pbInput"
                                                       }
                                                     ],
                                                     [
@@ -2467,7 +2601,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Religion"
+                                                            "value" : "Religión"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -2487,6 +2621,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "93cfaccf-fba5-4a63-bfe8-0bd79a8340c9",
@@ -2591,7 +2751,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Fecha_nacimiento"
+                                                            "value" : "Fecha de nacimiento"
                                                           },
                                                           "type" : {
                                                             "type" : "constant"
@@ -2627,6 +2787,10 @@
                                                           "value" : {
                                                             "type" : "variable",
                                                             "value" : "solicitud_informacion_datos_personales.fecha_nacimiento"
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
                                                           }
                                                         },
                                                         "reference" : "afe1ce13-787c-4da9-aaa5-ad05d474ca94",
@@ -2741,7 +2905,7 @@
                                                     },
                                                     "text" : {
                                                       "type" : "interpolation",
-                                                      "value" : "DatosEscuelaCursada"
+                                                      "value" : "Datos de la escuela cursada"
                                                     },
                                                     "alignment" : {
                                                       "type" : "constant",
@@ -2750,6 +2914,10 @@
                                                     "dimension" : {
                                                       "type" : "constant",
                                                       "value" : 12
+                                                    },
+                                                    "allowHTML" : {
+                                                      "type" : "constant",
+                                                      "value" : false
                                                     }
                                                   },
                                                   "reference" : "d9f6c18e-252f-472f-9da3-b51a75d28f43",
@@ -2921,7 +3089,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Pais"
+                                                            "value" : "País"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -2941,6 +3109,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "af28373e-0480-476b-8185-261dc13bd643",
@@ -3113,7 +3307,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Promedio_general"
+                                                            "value" : "Promedio general"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -3133,6 +3327,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "76305196-8474-4661-9d4e-52fe958c9605",
@@ -3183,7 +3403,7 @@
                                                     },
                                                     "text" : {
                                                       "type" : "interpolation",
-                                                      "value" : "DatosFamiliares"
+                                                      "value" : "Datos familiares"
                                                     },
                                                     "alignment" : {
                                                       "type" : "constant",
@@ -3192,6 +3412,10 @@
                                                     "dimension" : {
                                                       "type" : "constant",
                                                       "value" : 12
+                                                    },
+                                                    "allowHTML" : {
+                                                      "type" : "constant",
+                                                      "value" : false
                                                     }
                                                   },
                                                   "reference" : "2b2e48f4-a128-422c-bd56-13ff21fe171f",
@@ -3427,7 +3651,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Telefono"
+                                                            "value" : "Teléfono"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -3447,6 +3671,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "1ede9466-edd4-476d-a93a-602b317a0ecf",
@@ -3497,7 +3747,7 @@
                                                     },
                                                     "text" : {
                                                       "type" : "interpolation",
-                                                      "value" : "DatosPago"
+                                                      "value" : "Datos del pago"
                                                     },
                                                     "alignment" : {
                                                       "type" : "constant",
@@ -3506,6 +3756,10 @@
                                                     "dimension" : {
                                                       "type" : "constant",
                                                       "value" : 12
+                                                    },
+                                                    "allowHTML" : {
+                                                      "type" : "constant",
+                                                      "value" : false
                                                     }
                                                   },
                                                   "reference" : "e670f42b-1401-4625-a06b-b12a193e80bb",
@@ -3613,7 +3867,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Comprobante_pago_file_id"
+                                                            "value" : "Comprobante id"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -3633,6 +3887,32 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
+                                                          },
+                                                          "allowHTML" : {
+                                                            "type" : "constant",
+                                                            "value" : false
+                                                          },
+                                                          "minLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "maxLength" : {
+                                                            "type" : "constant",
+                                                            "value" : ""
+                                                          },
+                                                          "debounce" : {
+                                                            "type" : "constant",
+                                                            "value" : 0
+                                                          },
+                                                          "min" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "max" : {
+                                                            "type" : "constant"
+                                                          },
+                                                          "step" : {
+                                                            "type" : "constant",
+                                                            "value" : 1
                                                           }
                                                         },
                                                         "reference" : "2b50d293-cc53-4326-8c1f-7c207d307666",
@@ -3677,7 +3957,7 @@
                                                           },
                                                           "label" : {
                                                             "type" : "interpolation",
-                                                            "value" : "Comprobante_pago_file_name"
+                                                            "value" : "Nombre de archivo"
                                                           },
                                                           "placeholder" : {
                                                             "type" : "constant"
@@ -3697,73 +3977,35 @@
                                                           "required" : {
                                                             "type" : "constant",
                                                             "value" : false
-                                                          }
-                                                        },
-                                                        "reference" : "9890c47b-3ebe-4452-b594-897ea40ec4d3",
-                                                        "hasValidationError" : false,
-                                                        "id" : "pbInput",
-                                                        "description" : ""
-                                                      }
-                                                    ],
-                                                    [
-                                                      {
-                                                        "type" : "component",
-                                                        "dimension" : {
-                                                          "md" : 12,
-                                                          "sm" : 12,
-                                                          "xs" : 12,
-                                                          "lg" : 12
-                                                        },
-                                                        "propertyValues" : {
-                                                          "labelHidden" : {
+                                                          },
+                                                          "allowHTML" : {
                                                             "type" : "constant",
                                                             "value" : false
                                                           },
-                                                          "hidden" : {
-                                                            "type" : "expression",
-                                                            "value" : "!solicitud_informacion_datos_pago.comprobante_pago_file_url"
-                                                          },
-                                                          "labelPosition" : {
-                                                            "type" : "constant",
-                                                            "value" : "top"
-                                                          },
-                                                          "cssClasses" : {
+                                                          "minLength" : {
                                                             "type" : "constant",
                                                             "value" : ""
                                                           },
-                                                          "labelWidth" : {
+                                                          "maxLength" : {
                                                             "type" : "constant",
-                                                            "value" : 1
+                                                            "value" : ""
                                                           },
-                                                          "readOnly" : {
+                                                          "debounce" : {
                                                             "type" : "constant",
-                                                            "value" : true
+                                                            "value" : 0
                                                           },
-                                                          "label" : {
-                                                            "type" : "interpolation",
-                                                            "value" : "Comprobante_pago_file_url"
-                                                          },
-                                                          "placeholder" : {
+                                                          "min" : {
                                                             "type" : "constant"
                                                           },
-                                                          "type" : {
-                                                            "type" : "constant",
-                                                            "value" : "text"
+                                                          "max" : {
+                                                            "type" : "constant"
                                                           },
-                                                          "dimension" : {
+                                                          "step" : {
                                                             "type" : "constant",
-                                                            "value" : 12
-                                                          },
-                                                          "value" : {
-                                                            "type" : "variable",
-                                                            "value" : "solicitud_informacion_datos_pago.comprobante_pago_file_url"
-                                                          },
-                                                          "required" : {
-                                                            "type" : "constant",
-                                                            "value" : false
+                                                            "value" : 1
                                                           }
                                                         },
-                                                        "reference" : "e2c2b262-a385-49b6-9c25-bff67578f83c",
+                                                        "reference" : "9890c47b-3ebe-4452-b594-897ea40ec4d3",
                                                         "hasValidationError" : false,
                                                         "id" : "pbInput",
                                                         "description" : ""
@@ -3791,6 +4033,58 @@
             }
           ]
         ]
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<br><br>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "acc58a1e-5046-44b8-9ca0-e05d886290b9",
+        "hasValidationError" : false,
+        "id" : "pbText"
       }
     ]
   ],
@@ -3899,6 +4193,13 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "getSexo" : {
+      "type" : "expression",
+      "value" : [
+        "return $data.solicitud_informacion_datos_personales.sexo ? \"Hombre\" : \"Mujer\";"
       ],
       "exposed" : false
     }
