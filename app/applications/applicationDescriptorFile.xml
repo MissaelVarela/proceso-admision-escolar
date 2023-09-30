@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="aspiranteApp" version="1.0" profile="User" homePage="inicio" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Aspirante App</displayName>
+        <description>Aplicación para los aspirantes.</description>
+        <applicationPages>
+            <applicationPage customPage="custompage_detallesSolicitudPage" token="detalles_solicitud"/>
+            <applicationPage customPage="custompage_inicioAspirantePage" token="inicio"/>
+            <applicationPage customPage="custompage_misSolicitudesPage" token="mis_solicitudes"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="inicio">
+                <displayName>Inicio</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="mis_solicitudes">
+                <displayName>Mis solicitudes</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+    <application token="invitadoApp" version="1.0" profile="User" homePage="inicio" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Invitado App</displayName>
+        <description>Aplicación pública.</description>
+        <applicationPages>
+            <applicationPage customPage="custompage_inicioInvitadoPage" token="inicio"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="inicio">
+                <displayName>Inicio</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

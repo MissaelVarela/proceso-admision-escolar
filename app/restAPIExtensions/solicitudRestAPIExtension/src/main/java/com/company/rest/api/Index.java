@@ -100,8 +100,8 @@ public class Index extends AbstractIndex {
         
         // Business logic
         try {
-        	long id = Long.parseLong(String.valueOf(aspirante_id));
-            List<Solicitud> consulta = solicitudDAO.findByAspirante_id(id, 0, 99);
+        	long aspiranteId = Long.parseLong(String.valueOf(aspirante_id));
+            List<Solicitud> consulta = solicitudDAO.findByAspirante_id(aspiranteId, 0, 99);
 
             ArrayList<SolicitudResult> list = new ArrayList<>();
             
@@ -109,13 +109,14 @@ public class Index extends AbstractIndex {
             	
             	DatosSolicitud datos_solicitud = solicitud.getInformacion().getDatos_solicitud();
             	DateTimeFormatter customFormatter = DateTimeFormatter.ofPattern("dd 'de' MMM'.' yyyy',' hh:mm a");
-            	
+
+            	String solicitudId = String.valueOf(solicitud.getPersistenceId());
             	String status = solicitud.getStatus();
             	String fecha = solicitud.getFecha_inicio().format(customFormatter);
             	String licenciatura = datos_solicitud.getLicenciatura().getNombre();
             	String periodo = datos_solicitud.getPeriodo_de_ingreso().getNombre();
             	
-            	SolicitudResult solicitudResult = new SolicitudResult(status, fecha, licenciatura, periodo);
+            	SolicitudResult solicitudResult = new SolicitudResult(solicitudId, status, fecha, licenciatura, periodo);
             	
             	list.add(solicitudResult);
     		}
