@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "deeb611b-c189-45b6-a7ed-c2d39ae034fd",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696062860440,
+  "lastUpdate" : 1696531757882,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -351,7 +351,7 @@
                             },
                             "readOnly" : {
                               "type" : "constant",
-                              "value" : false
+                              "value" : true
                             },
                             "labelHidden" : {
                               "type" : "constant",
@@ -436,7 +436,7 @@
                             },
                             "readOnly" : {
                               "type" : "constant",
-                              "value" : false
+                              "value" : true
                             },
                             "labelHidden" : {
                               "type" : "constant",

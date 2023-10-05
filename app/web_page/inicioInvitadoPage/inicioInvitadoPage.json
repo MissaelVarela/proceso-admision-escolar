@@ -4,7 +4,7 @@
   "type" : "page",
   "uuid" : "c32bd93c-4b65-428c-805f-9ead4ea38da2",
   "modelVersion" : "2.4",
-  "lastUpdate" : 1696059060969,
+  "lastUpdate" : 1696531922849,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -266,7 +266,7 @@
           },
           "text" : {
             "type" : "interpolation",
-            "value" : "Si ya llenaste los datos para tu registro y recibiste tu clave de confirmación por correo, continua en con la confirmación de la cuenta."
+            "value" : "Si ya llenaste los datos para tu registro y recibiste tu clave de confirmación por correo, confirma tu cuenta en el siguiente botón."
           },
           "alignment" : {
             "type" : "constant",
